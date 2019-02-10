@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Devops on Backend-заметки</title>
+    <link>https://rsimkin.github.io/blog/tags/devops/</link>
+    <description>Recent content in Devops on Backend-заметки</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>ru-ru</language>
+    <managingEditor>r.s.simkin@yandex.ru (Симкин Роман)</managingEditor>
+    <webMaster>r.s.simkin@yandex.ru (Симкин Роман)</webMaster>
+    <lastBuildDate>Mon, 03 Dec 2018 16:03:58 +0000</lastBuildDate>
+    
+	<atom:link href="https://rsimkin.github.io/blog/tags/devops/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>ПрактРеУдачные  1С-Битрикс</title>
+      <link>https://rsimkin.github.io/blog/post/bitrix-notes/</link>
+      <pubDate>Mon, 03 Dec 2018 16:03:58 +0000</pubDate>
+      <author>r.s.simkin@yandex.ru (Симкин Роман)</author>
+      <guid>https://rsimkin.github.io/blog/post/bitrix-notes/</guid>
+      <description>Введение В данной статье я хочу отразить ряд советов и подсказок по работе с 1С-Битрикс, а также оградить читателя от подводных камней, с которыми я сталкивался сам или сталкивалась команда.
+Важно заметить, что разработка на 1С-Битрикс имеет свою специфику, которую в данной статье я не подвергаю критике.
+Это всего лишь еще один инструмент для бизнеса, основанного на веб-разработке, и нужно попробовать использовать его на максимум.
+Агенты в 1С-Битрикс В 1С-Битрикс существует система внутреннего менеджера фоновых задач.</description>
+    </item>
+    
+  </channel>
+</rss>

@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+  xmlns:xhtml="http://www.w3.org/1999/xhtml">
+  
+  <url>
+    <loc>https://rsimkin.github.io/blog/post/phpstrom-annotations/</loc>
+    <lastmod>2018-12-09T13:25:58+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://rsimkin.github.io/blog/post/bitrix-notes/</loc>
+    <lastmod>2018-12-03T16:03:58+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://rsimkin.github.io/blog/post/php-interview-funny-task/</loc>
+    <lastmod>2018-11-05T22:16:58+03:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://rsimkin.github.io/blog/tags/bitrix/</loc>
+    <lastmod>2018-12-03T16:03:58+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://rsimkin.github.io/blog/categories/</loc>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://rsimkin.github.io/blog/tags/devops/</loc>
+    <lastmod>2018-12-03T16:03:58+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://rsimkin.github.io/blog/tags/ide/</loc>
+    <lastmod>2018-12-09T13:25:58+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://rsimkin.github.io/blog/tags/interview/</loc>
+    <lastmod>2018-11-05T22:16:58+03:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://rsimkin.github.io/blog/page/</loc>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://rsimkin.github.io/blog/tags/php/</loc>
+    <lastmod>2018-12-03T16:03:58+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://rsimkin.github.io/blog/post/</loc>
+    <lastmod>2018-12-09T13:25:58+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://rsimkin.github.io/blog/tags/</loc>
+    <lastmod>2018-12-03T16:03:58+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://rsimkin.github.io/blog/tags/vcs/</loc>
+    <lastmod>2018-12-09T13:25:58+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://rsimkin.github.io/blog/tags/vsc/</loc>
+    <lastmod>2018-12-03T16:03:58+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://rsimkin.github.io/blog/</loc>
+    <lastmod>2018-12-09T13:25:58+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://rsimkin.github.io/blog/page/about/</loc>
+  </url>
+  
+</urlset>

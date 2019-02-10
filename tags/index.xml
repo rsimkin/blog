@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Tags on Backend-заметки</title>
+    <link>https://rsimkin.github.io/blog/tags/</link>
+    <description>Recent content in Tags on Backend-заметки</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>ru-ru</language>
+    <managingEditor>r.s.simkin@yandex.ru (Симкин Роман)</managingEditor>
+    <webMaster>r.s.simkin@yandex.ru (Симкин Роман)</webMaster>
+    <lastBuildDate>Mon, 03 Dec 2018 16:03:58 +0000</lastBuildDate>
+    
+	<atom:link href="https://rsimkin.github.io/blog/tags/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Bitrix</title>
+      <link>https://rsimkin.github.io/blog/tags/bitrix/</link>
+      <pubDate>Mon, 03 Dec 2018 16:03:58 +0000</pubDate>
+      <author>r.s.simkin@yandex.ru (Симкин Роман)</author>
+      <guid>https://rsimkin.github.io/blog/tags/bitrix/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Devops</title>
+      <link>https://rsimkin.github.io/blog/tags/devops/</link>
+      <pubDate>Mon, 03 Dec 2018 16:03:58 +0000</pubDate>
+      <author>r.s.simkin@yandex.ru (Симкин Роман)</author>
+      <guid>https://rsimkin.github.io/blog/tags/devops/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Ide</title>
+      <link>https://rsimkin.github.io/blog/tags/ide/</link>
+      <pubDate>Sun, 09 Dec 2018 13:25:58 +0000</pubDate>
+      <author>r.s.simkin@yandex.ru (Симкин Роман)</author>
+      <guid>https://rsimkin.github.io/blog/tags/ide/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Interview</title>
+      <link>https://rsimkin.github.io/blog/tags/interview/</link>
+      <pubDate>Mon, 05 Nov 2018 22:16:58 +0300</pubDate>
+      <author>r.s.simkin@yandex.ru (Симкин Роман)</author>
+      <guid>https://rsimkin.github.io/blog/tags/interview/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Php</title>
+      <link>https://rsimkin.github.io/blog/tags/php/</link>
+      <pubDate>Mon, 03 Dec 2018 16:03:58 +0000</pubDate>
+      <author>r.s.simkin@yandex.ru (Симкин Роман)</author>
+      <guid>https://rsimkin.github.io/blog/tags/php/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Vcs</title>
+      <link>https://rsimkin.github.io/blog/tags/vcs/</link>
+      <pubDate>Sun, 09 Dec 2018 13:25:58 +0000</pubDate>
+      <author>r.s.simkin@yandex.ru (Симкин Роман)</author>
+      <guid>https://rsimkin.github.io/blog/tags/vcs/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Vsc</title>
+      <link>https://rsimkin.github.io/blog/tags/vsc/</link>
+      <pubDate>Mon, 03 Dec 2018 16:03:58 +0000</pubDate>
+      <author>r.s.simkin@yandex.ru (Симкин Роман)</author>
+      <guid>https://rsimkin.github.io/blog/tags/vsc/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>

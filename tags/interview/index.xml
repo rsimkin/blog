@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Interview on Backend-заметки</title>
+    <link>https://rsimkin.github.io/blog/tags/interview/</link>
+    <description>Recent content in Interview on Backend-заметки</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>ru-ru</language>
+    <managingEditor>r.s.simkin@yandex.ru (Симкин Роман)</managingEditor>
+    <webMaster>r.s.simkin@yandex.ru (Симкин Роман)</webMaster>
+    <lastBuildDate>Mon, 05 Nov 2018 22:16:58 +0300</lastBuildDate>
+    
+	<atom:link href="https://rsimkin.github.io/blog/tags/interview/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Задание для php-разработчика</title>
+      <link>https://rsimkin.github.io/blog/post/php-interview-funny-task/</link>
+      <pubDate>Mon, 05 Nov 2018 22:16:58 +0300</pubDate>
+      <author>r.s.simkin@yandex.ru (Симкин Роман)</author>
+      <guid>https://rsimkin.github.io/blog/post/php-interview-funny-task/</guid>
+      <description>Введение На одном собеседовании на должность php-разработчика было предоставлено своеобразное задание. Условие было поставлено следующее: дан фрагмент кода:
+&amp;lt;?php class A { private $x = 5; }  Требуется предложить способы, которыми можно получить значение $x.
+Решение Некоторые решения показались нестандартным и интересным. Предлагаю следующие вариаенты:
+&amp;lt;?php class A { private $x = 5; } $a = new A; /** * Способ 1. Reflection API */ $reflectionClass = new ReflectionClass($a); $property = $reflectionClass-&amp;gt;getProperty(&amp;#39;x&amp;#39;); $property-&amp;gt;setAccessible(true); var_dump($property-&amp;gt;getValue($a)); /** * Способ 2.</description>
+    </item>
+    
+  </channel>
+</rss>
