@@ -8,7 +8,7 @@
     <language>ru-ru</language>
     <managingEditor>r.s.simkin@yandex.ru (Симкин Роман)</managingEditor>
     <webMaster>r.s.simkin@yandex.ru (Симкин Роман)</webMaster>
-    <lastBuildDate>Mon, 05 Nov 2018 22:16:58 +0300</lastBuildDate>
+    <lastBuildDate>Mon, 05 Nov 2018 19:16:58 +0000</lastBuildDate>
     
 	<atom:link href="https://rsimkin.github.io/blog/tags/interview/index.xml" rel="self" type="application/rss+xml" />
     
@@ -16,13 +16,14 @@
     <item>
       <title>Задание для php-разработчика</title>
       <link>https://rsimkin.github.io/blog/post/php-interview-funny-task/</link>
-      <pubDate>Mon, 05 Nov 2018 22:16:58 +0300</pubDate>
+      <pubDate>Mon, 05 Nov 2018 19:16:58 +0000</pubDate>
       <author>r.s.simkin@yandex.ru (Симкин Роман)</author>
       <guid>https://rsimkin.github.io/blog/post/php-interview-funny-task/</guid>
-      <description>Введение На одном собеседовании на должность php-разработчика было предоставлено своеобразное задание. Условие было поставлено следующее: дан фрагмент кода:
-&amp;lt;?php class A { private $x = 5; }  Требуется предложить способы, которыми можно получить значение $x.
-Решение Некоторые решения показались нестандартным и интересным. Предлагаю следующие вариаенты:
-&amp;lt;?php class A { private $x = 5; } $a = new A; /** * Способ 1. Reflection API */ $reflectionClass = new ReflectionClass($a); $property = $reflectionClass-&amp;gt;getProperty(&amp;#39;x&amp;#39;); $property-&amp;gt;setAccessible(true); var_dump($property-&amp;gt;getValue($a)); /** * Способ 2.</description>
+      <description>Введение На одном собеседовании на должность php-разработчика было предоставлено своеобразное задание. Условие было поставлено следующее.
+Дан фрагмент кода:
+&amp;lt;?php class A { private $x = 5; }  Требуется предложить как можно больше способов, которыми можно получить значение $x.
+Решение Некоторые решения показались нестандартным и интересным. Предлагаю следующие варианты:
+&amp;lt;?php class A { private $x = 5; } $a = new A; /** * Способ 1. Reflection API \*/ $reflectionClass = new ReflectionClass($a); $property = $reflectionClass-&amp;gt;getProperty(&amp;#39;x&amp;#39;); $property-&amp;gt;setAccessible(true); var_dump($property-&amp;gt;getValue($a)); /** * Способ 2.</description>
     </item>
     
   </channel>
