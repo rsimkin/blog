@@ -21,9 +21,10 @@
       <guid>https://rsimkin.github.io/blog/post/php-interview-funny-task/</guid>
       <description>Введение На одном собеседовании на должность php-разработчика было предоставлено своеобразное задание. Условие было поставлено следующее.
 Дан фрагмент кода:
-&amp;lt;?php class A { private $x = 5; }  Требуется предложить как можно больше способов, которыми можно получить значение $x.
+&amp;lt;?php class A { private $x = 5; } $a = new A;  Требуется предложить как можно больше способов, которыми можно получить значение $x.
 Решение Некоторые решения показались нестандартным и интересным. Предлагаю следующие варианты:
-&amp;lt;?php class A { private $x = 5; } $a = new A; /** * Способ 1. Reflection API \*/ $reflectionClass = new ReflectionClass($a); $property = $reflectionClass-&amp;gt;getProperty(&amp;#39;x&amp;#39;); $property-&amp;gt;setAccessible(true); var_dump($property-&amp;gt;getValue($a)); /** * Способ 2.</description>
+Способ 1. Reflection API &amp;lt;?php $reflectionClass = new ReflectionClass($a); $property = $reflectionClass-&amp;gt;getProperty(&amp;#39;x&amp;#39;); $property-&amp;gt;setAccessible(true); var_dump($property-&amp;gt;getValue($a)); 
+Способ 2.</description>
     </item>
     
   </channel>

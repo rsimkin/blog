@@ -12,17 +12,19 @@
   <meta name="twitter:title" content="Задание для php-разработчика" />
   <meta name="description" content="Введение На одном собеседовании на должность php-разработчика было предоставлено своеобразное задание. Условие было поставлено следующее.
 Дан фрагмент кода:
-&lt;?php class A { private $x = 5; }  Требуется предложить как можно больше способов, которыми можно получить значение $x.
+&lt;?php class A { private $x = 5; } $a = new A;  Требуется предложить как можно больше способов, которыми можно получить значение $x.
 Решение Некоторые решения показались нестандартным и интересным. Предлагаю следующие варианты:
-&lt;?php class A { private $x = 5; } $a = new A; /** * Способ 1. Reflection API \*/ $reflectionClass = new ReflectionClass($a); $property = $reflectionClass-&gt;getProperty(&#39;x&#39;); $property-&gt;setAccessible(true); var_dump($property-&gt;getValue($a)); /** * Способ 2.">
+Способ 1. Reflection API &lt;?php $reflectionClass = new ReflectionClass($a); $property = $reflectionClass-&gt;getProperty(&#39;x&#39;); $property-&gt;setAccessible(true); var_dump($property-&gt;getValue($a)); 
+Способ 2.">
   <meta property="og:description" content="Введение На одном собеседовании на должность php-разработчика было предоставлено своеобразное задание. Условие было поставлено следующее.
 Дан фрагмент кода:
-&lt;?php class A { private $x = 5; }  Требуется предложить как можно больше способов, которыми можно получить значение $x.
+&lt;?php class A { private $x = 5; } $a = new A;  Требуется предложить как можно больше способов, которыми можно получить значение $x.
 Решение Некоторые решения показались нестандартным и интересным. Предлагаю следующие варианты:
-&lt;?php class A { private $x = 5; } $a = new A; /** * Способ 1. Reflection API \*/ $reflectionClass = new ReflectionClass($a); $property = $reflectionClass-&gt;getProperty(&#39;x&#39;); $property-&gt;setAccessible(true); var_dump($property-&gt;getValue($a)); /** * Способ 2.">
+Способ 1. Reflection API &lt;?php $reflectionClass = new ReflectionClass($a); $property = $reflectionClass-&gt;getProperty(&#39;x&#39;); $property-&gt;setAccessible(true); var_dump($property-&gt;getValue($a)); 
+Способ 2.">
   <meta name="twitter:description" content="Введение На одном собеседовании на должность php-разработчика было предоставлено своеобразное задание. Условие было поставлено следующее.
 Дан фрагмент кода:
-&lt;?php class A { private $x = 5; } …">
+&lt;?php class A { private $x = 5; } $a = …">
   <meta name="author" content="Симкин Роман"/><script type="application/ld+json">
 {
     "@context": "http://schema.org",
@@ -73,11 +75,12 @@
   "headline": "Задание для php-разработчика",
   "description" : "Введение На одном собеседовании на должность php-разработчика было предоставлено своеобразное задание. Условие было поставлено следующее.
 Дан фрагмент кода:
-&amp;lt;?php class A { private $x = 5; }  Требуется предложить как можно больше способов, которыми можно получить значение $x.
+&amp;lt;?php class A { private $x = 5; } $a = new A;  Требуется предложить как можно больше способов, которыми можно получить значение $x.
 Решение Некоторые решения показались нестандартным и интересным. Предлагаю следующие варианты:
-&amp;lt;?php class A { private $x = 5; } $a = new A; /** * Способ 1. Reflection API \*/ $reflectionClass = new ReflectionClass($a); $property = $reflectionClass-&amp;gt;getProperty(&amp;#39;x&amp;#39;); $property-&amp;gt;setAccessible(true); var_dump($property-&amp;gt;getValue($a)); /** * Способ 2.",
+Способ 1. Reflection API &amp;lt;?php $reflectionClass = new ReflectionClass($a); $property = $reflectionClass-&amp;gt;getProperty(&amp;#39;x&amp;#39;); $property-&amp;gt;setAccessible(true); var_dump($property-&amp;gt;getValue($a)); 
+Способ 2.",
   "inLanguage" : "ru",
-  "wordCount": 121,
+  "wordCount": 104,
   "datePublished" : "2018-11-05T19:16:58",
   "dateModified" : "2018-11-05T19:16:58",
   "image" : "https://rsimkin.github.io/blog/",
@@ -99,16 +102,17 @@
 <meta property="og:title" content="Задание для php-разработчика" />
 <meta property="og:description" content="Введение На одном собеседовании на должность php-разработчика было предоставлено своеобразное задание. Условие было поставлено следующее.
 Дан фрагмент кода:
-&lt;?php class A { private $x = 5; }  Требуется предложить как можно больше способов, которыми можно получить значение $x.
+&lt;?php class A { private $x = 5; } $a = new A;  Требуется предложить как можно больше способов, которыми можно получить значение $x.
 Решение Некоторые решения показались нестандартным и интересным. Предлагаю следующие варианты:
-&lt;?php class A { private $x = 5; } $a = new A; /** * Способ 1. Reflection API \*/ $reflectionClass = new ReflectionClass($a); $property = $reflectionClass-&gt;getProperty(&#39;x&#39;); $property-&gt;setAccessible(true); var_dump($property-&gt;getValue($a)); /** * Способ 2.">
+Способ 1. Reflection API &lt;?php $reflectionClass = new ReflectionClass($a); $property = $reflectionClass-&gt;getProperty(&#39;x&#39;); $property-&gt;setAccessible(true); var_dump($property-&gt;getValue($a)); 
+Способ 2.">
 <meta property="og:url" content="https://rsimkin.github.io/blog/post/php-interview-funny-task/" />
 <meta property="og:type" content="website" />
 <meta property="og:site_name" content="Backend-заметки" />
   <meta name="twitter:title" content="Задание для php-разработчика" />
   <meta name="twitter:description" content="Введение На одном собеседовании на должность php-разработчика было предоставлено своеобразное задание. Условие было поставлено следующее.
 Дан фрагмент кода:
-&lt;?php class A { private $x = 5; } …">
+&lt;?php class A { private $x = 5; } $a = …">
   <meta name="twitter:card" content="summary" />
   <meta name="twitter:card" content="summary" />
   <meta property="og:url" content="https://rsimkin.github.io/blog/post/php-interview-funny-task/" />
@@ -291,8 +295,10 @@ if (!doNotTrack) {
 <div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-php" data-lang="php"><span style="color:#75715e">&lt;?php</span>
 <span style="color:#66d9ef">class</span> <span style="color:#a6e22e">A</span>
 {
-<span style="color:#66d9ef">private</span> $x <span style="color:#f92672">=</span> <span style="color:#ae81ff">5</span>;
+	<span style="color:#66d9ef">private</span> $x <span style="color:#f92672">=</span> <span style="color:#ae81ff">5</span>;
 }
+
+$a <span style="color:#f92672">=</span> <span style="color:#66d9ef">new</span> <span style="color:#a6e22e">A</span>;
 </code></pre></div>
 
 <p><strong>Требуется предложить как можно больше способов, которыми можно получить значение</strong> <code>$x</code>.</p>
@@ -301,47 +307,34 @@ if (!doNotTrack) {
 
 <p>Некоторые решения показались нестандартным и интересным. Предлагаю следующие варианты:</p>
 
+<p>Способ 1. Reflection API
 <div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-php" data-lang="php"><span style="color:#75715e">&lt;?php</span>
-<span style="color:#66d9ef">class</span> <span style="color:#a6e22e">A</span>
-{
-<span style="color:#66d9ef">private</span> $x <span style="color:#f92672">=</span> <span style="color:#ae81ff">5</span>;
-}
+$reflectionClass <span style="color:#f92672">=</span> <span style="color:#66d9ef">new</span> <span style="color:#a6e22e">ReflectionClass</span>($a);
+$property <span style="color:#f92672">=</span> $reflectionClass<span style="color:#f92672">-&gt;</span><span style="color:#a6e22e">getProperty</span>(<span style="color:#e6db74">&#39;x&#39;</span>);
+$property<span style="color:#f92672">-&gt;</span><span style="color:#a6e22e">setAccessible</span>(<span style="color:#66d9ef">true</span>);
+<span style="color:#a6e22e">var_dump</span>($property<span style="color:#f92672">-&gt;</span><span style="color:#a6e22e">getValue</span>($a));
+</code></pre></div></p>
 
-$a <span style="color:#f92672">=</span> <span style="color:#66d9ef">new</span> <span style="color:#a6e22e">A</span>;
-
-<span style="color:#e6db74">/**
-</span><span style="color:#e6db74">
-</span><span style="color:#e6db74">* Способ 1. Reflection API
-</span><span style="color:#e6db74">  \*/</span>
-  $reflectionClass <span style="color:#f92672">=</span> <span style="color:#66d9ef">new</span> <span style="color:#a6e22e">ReflectionClass</span>($a);
-  $property <span style="color:#f92672">=</span> $reflectionClass<span style="color:#f92672">-&gt;</span><span style="color:#a6e22e">getProperty</span>(<span style="color:#e6db74">&#39;x&#39;</span>);
-  $property<span style="color:#f92672">-&gt;</span><span style="color:#a6e22e">setAccessible</span>(<span style="color:#66d9ef">true</span>);
-  <span style="color:#a6e22e">var_dump</span>($property<span style="color:#f92672">-&gt;</span><span style="color:#a6e22e">getValue</span>($a));
-
-<span style="color:#e6db74">/**
-</span><span style="color:#e6db74">
-</span><span style="color:#e6db74">* Способ 2. Объект - замыкание
-</span><span style="color:#e6db74">  \*/</span>
-  $getPrivate <span style="color:#f92672">=</span> <span style="color:#66d9ef">function</span>() {
+<p>Способ 2. Объект - замыкание
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-php" data-lang="php"><span style="color:#75715e">&lt;?php</span>
+$getPrivate <span style="color:#f92672">=</span> <span style="color:#66d9ef">function</span>() {
   <span style="color:#66d9ef">return</span> $this<span style="color:#f92672">-&gt;</span><span style="color:#a6e22e">x</span>;
-  };
-  <span style="color:#a6e22e">var_dump</span>($getPrivate<span style="color:#f92672">-&gt;</span><span style="color:#a6e22e">call</span>($a));
+};
+<span style="color:#a6e22e">var_dump</span>($getPrivate<span style="color:#f92672">-&gt;</span><span style="color:#a6e22e">call</span>($a));
+</code></pre></div></p>
 
-<span style="color:#e6db74">/**
-</span><span style="color:#e6db74">
-</span><span style="color:#e6db74">* Способ 3. Конвертация в массив
-</span><span style="color:#e6db74">  \*/</span>
-  <span style="color:#a6e22e">var_dump</span>(<span style="color:#a6e22e">current</span>((<span style="color:#66d9ef">array</span>)$a));
+<p>Способ 3. Конвертация в массив
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-php" data-lang="php"><span style="color:#75715e">&lt;?php</span>
+<span style="color:#a6e22e">var_dump</span>(<span style="color:#a6e22e">current</span>((<span style="color:#66d9ef">array</span>)$a));
+</code></pre></div></p>
 
-<span style="color:#e6db74">/**
-</span><span style="color:#e6db74">
-</span><span style="color:#e6db74">* Способ 4. Регулярное выражение и сериализация
-</span><span style="color:#e6db74">  \*/</span>
-  $str <span style="color:#f92672">=</span> <span style="color:#a6e22e">serialize</span>($a);
-  $pattern <span style="color:#f92672">=</span> <span style="color:#e6db74">&#39;/.+?A.+?;.{1}:(?&lt;x&gt;.+?);.+?/&#39;</span>;
-  <span style="color:#a6e22e">preg_match</span>($pattern, $str, $matches);
-  <span style="color:#a6e22e">var_dump</span>($matches\[<span style="color:#e6db74">&#39;x&#39;</span><span style="color:#a6e22e">\</span>]);
-</code></pre></div>
+<p>Способ 4. Регулярное выражение и сериализация
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-php" data-lang="php"><span style="color:#75715e">&lt;?php</span>
+$str <span style="color:#f92672">=</span> <span style="color:#a6e22e">serialize</span>($a);
+$pattern <span style="color:#f92672">=</span> <span style="color:#e6db74">&#39;/.+?A.+?;.{1}:(?&lt;x&gt;.+?);.+?/&#39;</span>;
+<span style="color:#a6e22e">preg_match</span>($pattern, $str, $matches);
+<span style="color:#a6e22e">var_dump</span>($matches\[<span style="color:#e6db74">&#39;x&#39;</span><span style="color:#a6e22e">\</span>]);
+</code></pre></div></p>
 
 
         

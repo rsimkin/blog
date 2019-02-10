@@ -226,9 +226,10 @@ if (!doNotTrack) {
                 
                   Введение На одном собеседовании на должность php-разработчика было предоставлено своеобразное задание. Условие было поставлено следующее.
 Дан фрагмент кода:
-&lt;?php class A { private $x = 5; }  Требуется предложить как можно больше способов, которыми можно получить значение $x.
+&lt;?php class A { private $x = 5; } $a = new A;  Требуется предложить как можно больше способов, которыми можно получить значение $x.
 Решение Некоторые решения показались нестандартным и интересным. Предлагаю следующие варианты:
-&lt;?php class A { private $x = 5; } $a = new A; /** * Способ 1. Reflection API \*/ $reflectionClass = new ReflectionClass($a); $property = $reflectionClass-&gt;getProperty(&#39;x&#39;); $property-&gt;setAccessible(true); var_dump($property-&gt;getValue($a)); /** * Способ 2.
+Способ 1. Reflection API &lt;?php $reflectionClass = new ReflectionClass($a); $property = $reflectionClass-&gt;getProperty(&#39;x&#39;); $property-&gt;setAccessible(true); var_dump($property-&gt;getValue($a)); 
+Способ 2.
                   <a href="https://rsimkin.github.io/blog/post/php-interview-funny-task/" class="post-read-more">[Далее]</a>
                 
               </div>
