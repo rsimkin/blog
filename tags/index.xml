@@ -32,6 +32,15 @@
     </item>
     
     <item>
+      <title>Golang</title>
+      <link>https://rsimkin.github.io/blog/tags/golang/</link>
+      <pubDate>Tue, 19 Feb 2019 10:29:23 +0300</pubDate>
+      <author>r.s.simkin@yandex.ru (Симкин Роман)</author>
+      <guid>https://rsimkin.github.io/blog/tags/golang/</guid>
+      <description></description>
+    </item>
+    
+    <item>
       <title>Ide</title>
       <link>https://rsimkin.github.io/blog/tags/ide/</link>
       <pubDate>Sun, 09 Dec 2018 13:25:58 +0000</pubDate>
@@ -55,6 +64,33 @@
       <pubDate>Mon, 03 Dec 2018 16:03:58 +0000</pubDate>
       <author>r.s.simkin@yandex.ru (Симкин Роман)</author>
       <guid>https://rsimkin.github.io/blog/tags/php/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Reindexer</title>
+      <link>https://rsimkin.github.io/blog/tags/reindexer/</link>
+      <pubDate>Tue, 19 Feb 2019 10:29:23 +0300</pubDate>
+      <author>r.s.simkin@yandex.ru (Симкин Роман)</author>
+      <guid>https://rsimkin.github.io/blog/tags/reindexer/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Sphinx</title>
+      <link>https://rsimkin.github.io/blog/tags/sphinx/</link>
+      <pubDate>Tue, 19 Feb 2019 10:29:23 +0300</pubDate>
+      <author>r.s.simkin@yandex.ru (Симкин Роман)</author>
+      <guid>https://rsimkin.github.io/blog/tags/sphinx/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Tarantool</title>
+      <link>https://rsimkin.github.io/blog/tags/tarantool/</link>
+      <pubDate>Tue, 19 Feb 2019 10:29:23 +0300</pubDate>
+      <author>r.s.simkin@yandex.ru (Симкин Роман)</author>
+      <guid>https://rsimkin.github.io/blog/tags/tarantool/</guid>
       <description></description>
     </item>
     
