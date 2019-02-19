@@ -2,7 +2,7 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Interview on Backend-заметки</title>
-    <link>https://rsimkin.github.io/blog/tags/interview/</link>
+    <link>https://rsimkin.github.io/tags/interview/</link>
     <description>Recent content in Interview on Backend-заметки</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ru-ru</language>
@@ -10,15 +10,15 @@
     <webMaster>r.s.simkin@yandex.ru (Симкин Роман)</webMaster>
     <lastBuildDate>Mon, 05 Nov 2018 19:16:58 +0000</lastBuildDate>
     
-	<atom:link href="https://rsimkin.github.io/blog/tags/interview/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://rsimkin.github.io/tags/interview/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Разбор интересного задания на PHP</title>
-      <link>https://rsimkin.github.io/blog/post/php-interview-funny-task/</link>
+      <link>https://rsimkin.github.io/post/php-interview-funny-task/</link>
       <pubDate>Mon, 05 Nov 2018 19:16:58 +0000</pubDate>
       <author>r.s.simkin@yandex.ru (Симкин Роман)</author>
-      <guid>https://rsimkin.github.io/blog/post/php-interview-funny-task/</guid>
+      <guid>https://rsimkin.github.io/post/php-interview-funny-task/</guid>
       <description>Введение На одном собеседовании на должность php-разработчика было предоставлено своеобразное задание. Условие было поставлено следующее.
 Дан фрагмент кода:
 &amp;lt;?php class A { private $x = 5; } $a = new A;  Требуется предложить как можно больше способов, которыми можно получить значение $x.

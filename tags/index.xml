@@ -2,7 +2,7 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Tags on Backend-заметки</title>
-    <link>https://rsimkin.github.io/blog/tags/</link>
+    <link>https://rsimkin.github.io/tags/</link>
     <description>Recent content in Tags on Backend-заметки</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ru-ru</language>
@@ -10,105 +10,105 @@
     <webMaster>r.s.simkin@yandex.ru (Симкин Роман)</webMaster>
     <lastBuildDate>Mon, 03 Dec 2018 16:03:58 +0000</lastBuildDate>
     
-	<atom:link href="https://rsimkin.github.io/blog/tags/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://rsimkin.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Bitrix</title>
-      <link>https://rsimkin.github.io/blog/tags/bitrix/</link>
+      <link>https://rsimkin.github.io/tags/bitrix/</link>
       <pubDate>Mon, 03 Dec 2018 16:03:58 +0000</pubDate>
       <author>r.s.simkin@yandex.ru (Симкин Роман)</author>
-      <guid>https://rsimkin.github.io/blog/tags/bitrix/</guid>
+      <guid>https://rsimkin.github.io/tags/bitrix/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Devops</title>
-      <link>https://rsimkin.github.io/blog/tags/devops/</link>
+      <link>https://rsimkin.github.io/tags/devops/</link>
       <pubDate>Mon, 03 Dec 2018 16:03:58 +0000</pubDate>
       <author>r.s.simkin@yandex.ru (Симкин Роман)</author>
-      <guid>https://rsimkin.github.io/blog/tags/devops/</guid>
+      <guid>https://rsimkin.github.io/tags/devops/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Golang</title>
-      <link>https://rsimkin.github.io/blog/tags/golang/</link>
+      <link>https://rsimkin.github.io/tags/golang/</link>
       <pubDate>Tue, 19 Feb 2019 10:29:23 +0300</pubDate>
       <author>r.s.simkin@yandex.ru (Симкин Роман)</author>
-      <guid>https://rsimkin.github.io/blog/tags/golang/</guid>
+      <guid>https://rsimkin.github.io/tags/golang/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Ide</title>
-      <link>https://rsimkin.github.io/blog/tags/ide/</link>
+      <link>https://rsimkin.github.io/tags/ide/</link>
       <pubDate>Sun, 09 Dec 2018 13:25:58 +0000</pubDate>
       <author>r.s.simkin@yandex.ru (Симкин Роман)</author>
-      <guid>https://rsimkin.github.io/blog/tags/ide/</guid>
+      <guid>https://rsimkin.github.io/tags/ide/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Interview</title>
-      <link>https://rsimkin.github.io/blog/tags/interview/</link>
+      <link>https://rsimkin.github.io/tags/interview/</link>
       <pubDate>Mon, 05 Nov 2018 19:16:58 +0000</pubDate>
       <author>r.s.simkin@yandex.ru (Симкин Роман)</author>
-      <guid>https://rsimkin.github.io/blog/tags/interview/</guid>
+      <guid>https://rsimkin.github.io/tags/interview/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Php</title>
-      <link>https://rsimkin.github.io/blog/tags/php/</link>
+      <link>https://rsimkin.github.io/tags/php/</link>
       <pubDate>Mon, 03 Dec 2018 16:03:58 +0000</pubDate>
       <author>r.s.simkin@yandex.ru (Симкин Роман)</author>
-      <guid>https://rsimkin.github.io/blog/tags/php/</guid>
+      <guid>https://rsimkin.github.io/tags/php/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Reindexer</title>
-      <link>https://rsimkin.github.io/blog/tags/reindexer/</link>
+      <link>https://rsimkin.github.io/tags/reindexer/</link>
       <pubDate>Tue, 19 Feb 2019 10:29:23 +0300</pubDate>
       <author>r.s.simkin@yandex.ru (Симкин Роман)</author>
-      <guid>https://rsimkin.github.io/blog/tags/reindexer/</guid>
+      <guid>https://rsimkin.github.io/tags/reindexer/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Sphinx</title>
-      <link>https://rsimkin.github.io/blog/tags/sphinx/</link>
+      <link>https://rsimkin.github.io/tags/sphinx/</link>
       <pubDate>Tue, 19 Feb 2019 10:29:23 +0300</pubDate>
       <author>r.s.simkin@yandex.ru (Симкин Роман)</author>
-      <guid>https://rsimkin.github.io/blog/tags/sphinx/</guid>
+      <guid>https://rsimkin.github.io/tags/sphinx/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Tarantool</title>
-      <link>https://rsimkin.github.io/blog/tags/tarantool/</link>
+      <link>https://rsimkin.github.io/tags/tarantool/</link>
       <pubDate>Tue, 19 Feb 2019 10:29:23 +0300</pubDate>
       <author>r.s.simkin@yandex.ru (Симкин Роман)</author>
-      <guid>https://rsimkin.github.io/blog/tags/tarantool/</guid>
+      <guid>https://rsimkin.github.io/tags/tarantool/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Vcs</title>
-      <link>https://rsimkin.github.io/blog/tags/vcs/</link>
+      <link>https://rsimkin.github.io/tags/vcs/</link>
       <pubDate>Sun, 09 Dec 2018 13:25:58 +0000</pubDate>
       <author>r.s.simkin@yandex.ru (Симкин Роман)</author>
-      <guid>https://rsimkin.github.io/blog/tags/vcs/</guid>
+      <guid>https://rsimkin.github.io/tags/vcs/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Vsc</title>
-      <link>https://rsimkin.github.io/blog/tags/vsc/</link>
+      <link>https://rsimkin.github.io/tags/vsc/</link>
       <pubDate>Mon, 03 Dec 2018 16:03:58 +0000</pubDate>
       <author>r.s.simkin@yandex.ru (Симкин Роман)</author>
-      <guid>https://rsimkin.github.io/blog/tags/vsc/</guid>
+      <guid>https://rsimkin.github.io/tags/vsc/</guid>
       <description></description>
     </item>
     
