@@ -1,0 +1,444 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    
+
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+
+  <title>Backend-заметки - Backend-заметки</title>
+  <meta property="og:title" content="Backend-заметки" />
+  <meta name="twitter:title" content="Backend-заметки" />
+  <meta name="description" content="Highloadcup 2018 Введение В данной статье я хочу рассказать о своем опыте участие в конкурсе Highloadcup 2018 (https://highloadcup.ru/ru/) от Mail.ru. о конкурсе я узнал из поста на хабре https://habr.com/ru/company/mailru/blog/433066/, а изначальной мотивацией принять участие было желание более опытных коллег посоревноваться.
+В рамках конкурса нужно было спроектировать и упаковать в Docker приложение, которое реализовывает несложное, но объемное по бизнес-логике REST API. Требуется реализовать 4 GET-запроса и 3 POST-запроса. Затем решение нужно отправить в docker-registry, после оно будет обстрелено с помощью yandex-tank разными профилями обстрела.">
+  <meta property="og:description" content="Highloadcup 2018 Введение В данной статье я хочу рассказать о своем опыте участие в конкурсе Highloadcup 2018 (https://highloadcup.ru/ru/) от Mail.ru. о конкурсе я узнал из поста на хабре https://habr.com/ru/company/mailru/blog/433066/, а изначальной мотивацией принять участие было желание более опытных коллег посоревноваться.
+В рамках конкурса нужно было спроектировать и упаковать в Docker приложение, которое реализовывает несложное, но объемное по бизнес-логике REST API. Требуется реализовать 4 GET-запроса и 3 POST-запроса. Затем решение нужно отправить в docker-registry, после оно будет обстрелено с помощью yandex-tank разными профилями обстрела.">
+  <meta name="twitter:description" content="Highloadcup 2018 Введение В данной статье я хочу рассказать о своем опыте участие в конкурсе Highloadcup 2018 (https://highloadcup.ru/ru/) от Mail.ru. о конкурсе я узнал из поста на хабре …">
+  <meta name="author" content="Симкин Роман"/><script type="application/ld+json">
+{
+    "@context": "http://schema.org",
+    "@type": "WebSite",
+    "name": "Backend-заметки",
+    
+    "url": "https://rsimkin.github.io/blog/"
+}
+</script><script type="application/ld+json">
+{
+  "@context": "http://schema.org",
+  "@type": "Organization",
+  "name": "",
+  "url": "https://rsimkin.github.io/blog/"
+  
+  
+  
+  
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "http://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [{
+        "@type": "ListItem",
+        "position": 1,
+        "item": {
+          "@id": "https://rsimkin.github.io/blog/",
+          "name": "home"
+        }
+    },{
+        "@type": "ListItem",
+        "position": 3,
+        "item": {
+          "@id": "https://rsimkin.github.io/blog/post/highloadcup-2018/",
+          "name": ""
+        }
+    }]
+}
+</script><script type="application/ld+json">
+{
+  "@context": "http://schema.org",
+  "@type": "Article",
+  "author": {
+    "name" : "Симкин Роман"
+  },
+  "headline": "",
+  "description" : "Highloadcup 2018 Введение В данной статье я хочу рассказать о своем опыте участие в конкурсе Highloadcup 2018 (https://highloadcup.ru/ru/) от Mail.ru. о конкурсе я узнал из поста на хабре https://habr.com/ru/company/mailru/blog/433066/, а изначальной мотивацией принять участие было желание более опытных коллег посоревноваться.
+В рамках конкурса нужно было спроектировать и упаковать в Docker приложение, которое реализовывает несложное, но объемное по бизнес-логике REST API. Требуется реализовать 4 GET-запроса и 3 POST-запроса. Затем решение нужно отправить в docker-registry, после оно будет обстрелено с помощью yandex-tank разными профилями обстрела.",
+  "inLanguage" : "ru",
+  "wordCount": 605,
+  "datePublished" : "2019-02-19T10:29:23",
+  "dateModified" : "2019-02-19T10:29:23",
+  "image" : "https://rsimkin.github.io/blog/",
+  "keywords" : [ "" ],
+  "mainEntityOfPage" : "https://rsimkin.github.io/blog/post/highloadcup-2018/",
+  "publisher" : {
+    "@type": "Organization",
+    "name" : "https://rsimkin.github.io/blog/",
+    "logo" : {
+        "@type" : "ImageObject",
+        "url" : "https://rsimkin.github.io/blog/",
+        "height" :  60 ,
+        "width" :  60
+    }
+  }
+}
+</script>
+
+<meta property="og:title" content="Backend-заметки" />
+<meta property="og:description" content="Highloadcup 2018 Введение В данной статье я хочу рассказать о своем опыте участие в конкурсе Highloadcup 2018 (https://highloadcup.ru/ru/) от Mail.ru. о конкурсе я узнал из поста на хабре https://habr.com/ru/company/mailru/blog/433066/, а изначальной мотивацией принять участие было желание более опытных коллег посоревноваться.
+В рамках конкурса нужно было спроектировать и упаковать в Docker приложение, которое реализовывает несложное, но объемное по бизнес-логике REST API. Требуется реализовать 4 GET-запроса и 3 POST-запроса. Затем решение нужно отправить в docker-registry, после оно будет обстрелено с помощью yandex-tank разными профилями обстрела.">
+<meta property="og:url" content="https://rsimkin.github.io/blog/post/highloadcup-2018/" />
+<meta property="og:type" content="website" />
+<meta property="og:site_name" content="Backend-заметки" />
+  <meta name="twitter:title" content="Backend-заметки" />
+  <meta name="twitter:description" content="Highloadcup 2018 Введение В данной статье я хочу рассказать о своем опыте участие в конкурсе Highloadcup 2018 (https://highloadcup.ru/ru/) от Mail.ru. о конкурсе я узнал из поста на хабре …">
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:card" content="summary" />
+  <meta property="og:url" content="https://rsimkin.github.io/blog/post/highloadcup-2018/" />
+  <meta property="og:type" content="website" />
+  <meta property="og:site_name" content="Backend-заметки" />
+
+  <meta name="generator" content="Hugo 0.53" />
+  <link rel="alternate" href="https://rsimkin.github.io/blog/index.xml" type="application/rss+xml" title="Backend-заметки">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.7.1/katex.min.css" integrity="sha384-wITovz90syo1dJWVh32uuETPVEtGigN07tkttEqPv+uR2SE/mbQcG7ATL28aI9H0" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://rsimkin.github.io/blog/css/main.css" /><link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic" />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800" /><link rel="stylesheet" href="https://rsimkin.github.io/blog/css/syntax.css" /><link rel="stylesheet" href="https://rsimkin.github.io/blog/css/codeblock.css" /><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/photoswipe/4.1.2/photoswipe.min.css" integrity="sha384-h/L2W9KefUClHWaty3SLE5F/qvc4djlyR4qY3NUV5HGQBBW7stbcfff1+I/vmsHh" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/photoswipe/4.1.2/default-skin/default-skin.min.css" integrity="sha384-iD0dNku6PYSIQLyfTOpB06F2KCZJAKLOThS5HRe8b3ibhdEQ6eKsFf/EeFxdOt5R" crossorigin="anonymous">
+
+
+<script type="application/javascript">
+var doNotTrack = false;
+if (!doNotTrack) {
+	window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
+	ga('create', 'UA-130664413-1', 'auto');
+	
+	ga('send', 'pageview');
+}
+</script>
+<script async src='https://www.google-analytics.com/analytics.js'></script>
+
+
+  </head>
+  <body>
+    <nav class="navbar navbar-default navbar-fixed-top navbar-custom">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#main-navbar">
+        <span class="sr-only">Навигация</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="https://rsimkin.github.io/blog/">Backend-заметки</a>
+    </div>
+
+    <div class="collapse navbar-collapse" id="main-navbar">
+      <ul class="nav navbar-nav navbar-right">
+        
+          
+            <li>
+              <a title="Блог" href="/blog/">Блог</a>
+            </li>
+          
+        
+          
+            <li>
+              <a title="Обо мне" href="/blog/page/about/">Обо мне</a>
+            </li>
+          
+        
+
+        
+
+        
+      </ul>
+    </div>
+
+    
+
+  </div>
+</nav>
+
+
+
+
+    
+
+
+<div class="pswp" tabindex="-1" role="dialog" aria-hidden="true">
+
+<div class="pswp__bg"></div>
+
+<div class="pswp__scroll-wrap">
+    
+    <div class="pswp__container">
+      <div class="pswp__item"></div>
+      <div class="pswp__item"></div>
+      <div class="pswp__item"></div>
+    </div>
+    
+    <div class="pswp__ui pswp__ui--hidden">
+    <div class="pswp__top-bar">
+      
+      <div class="pswp__counter"></div>
+      <button class="pswp__button pswp__button--close" title="Close (Esc)"></button>
+      <button class="pswp__button pswp__button--share" title="Share"></button>
+      <button class="pswp__button pswp__button--fs" title="Toggle fullscreen"></button>
+      <button class="pswp__button pswp__button--zoom" title="Zoom in/out"></button>
+      
+      
+      <div class="pswp__preloader">
+        <div class="pswp__preloader__icn">
+          <div class="pswp__preloader__cut">
+            <div class="pswp__preloader__donut"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="pswp__share-modal pswp__share-modal--hidden pswp__single-tap">
+      <div class="pswp__share-tooltip"></div>
+    </div>
+    <button class="pswp__button pswp__button--arrow--left" title="Previous (arrow left)">
+    </button>
+    <button class="pswp__button pswp__button--arrow--right" title="Next (arrow right)">
+    </button>
+    <div class="pswp__caption">
+      <div class="pswp__caption__center"></div>
+    </div>
+    </div>
+    </div>
+</div>
+
+
+  
+  
+  
+
+
+
+
+
+
+  <div class="intro-header"></div>
+
+
+    
+<div class="container" role="main">
+  <div class="row">
+    <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+      <article role="main" class="blog-post">
+        
+
+<h1 id="highloadcup-2018">Highloadcup 2018</h1>
+
+<h2 id="введение">Введение</h2>
+
+<p>В данной статье я хочу рассказать о своем опыте участие в конкурсе Highloadcup 2018 (<a href="https://highloadcup.ru/ru/" title="https://highloadcup.ru/ru/">https://highloadcup.ru/ru/</a>) от <strong>Mail.ru</strong>. о конкурсе я узнал из поста на хабре <a href="https://habr.com/ru/company/mailru/blog/433066/" title="https://habr.com/ru/company/mailru/blog/433066/">https://habr.com/ru/company/mailru/blog/433066/</a>, а изначальной мотивацией принять участие было желание более опытных коллег посоревноваться.</p>
+
+<p>В рамках конкурса нужно было спроектировать и упаковать в <strong>Docker</strong> приложение, которое реализовывает несложное, но объемное по бизнес-логике <strong>REST API</strong>. Требуется реализовать 4 <strong>GET</strong>-запроса и 3 <strong>POST</strong>-запроса. Затем решение нужно отправить в <strong>docker-registry</strong>, после оно будет обстрелено с помощью <strong>yandex-tank</strong> разными профилями обстрела. В ЛК участника будет виден результат обстрела.</p>
+
+<p>Примерный объем данных: 1 300 000 пользователей. Ограничение сервера, на котором обстреливается решение: 2 Гб ОЗУ, 10 ГБ HDD.</p>
+
+<p>Важным условием, которое я для себя поставил, было то, что решение нужно было написать на <strong>golang</strong>. Данный язык я давно хотел попробовать и это был лучший стимул начать изучение.</p>
+
+<h1 id="бета-раунд">Бета-раунд</h1>
+
+<p>Бета-раунд нужен для того, чтобы команда mail.ru могла с помощью сообщества найти недочеты в задании, а также в системе обстрела. Я решил попробовать следующий стек: <strong>golang</strong> + <strong>reindexer</strong></p>
+
+<p><strong>Reindexer</strong> - это <strong>inmemory</strong> БД, написанная на <strong>C++</strong>, также имеет расширение для golang. Поддерживает несколько режимов работы. <strong>Builtin</strong> - режим, когда БД хранится в самом приложении. Также есть возможность работы в серверном режиме. Статья на хабре: <a href="https://habr.com/ru/post/346884/" title="https://habr.com/ru/post/346884/">https://habr.com/ru/post/346884/</a>.</p>
+
+<p>Данная база показала себя как очень быстрая и удобная, но со временем я уперся в ряд ограничений:</p>
+
+<ul>
+<li>builtin-движок потреблял намного больше памяти, чем серверный вариант;</li>
+<li>документация неполная и местами противоречивая;</li>
+<li>группировка с помощью фасет не работает по составным индексам (или работает неочевидным образом);</li>
+<li>иногда демон начинал потреблять <strong>CPU</strong> и отказывался принимать запросы;</li>
+<li>&ldquo;собственный&rdquo; механизм получения данных (не <strong>sql</strong>)</li>
+<li>отсутствие возможности ограничивать использования оперативной памяти (из-за этого пришлось отказаться, так как в следующих раундах данные не влезли).</li>
+</ul>
+
+<h2 id="отборочный-раунд">Отборочный раунд</h2>
+
+<p>В отборочный раунде было увеличено количество данных и <strong>RPS</strong>. Пришлось искать другие варианты для хранения данных. Решил попробовать <strong>golang</strong> + <strong>sphinx</strong></p>
+
+<p>Положительные стороны:</p>
+
+<ul>
+<li>наличие функциональных <strong>realtime</strong>-индексов;</li>
+<li>возможность указывать количество памяти, которое будет выделено;</li>
+<li><strong>sphinxql</strong> - расширение <strong>sql</strong>-языка запросов;</li>
+<li>поддержка json;</li>
+<li>встроенная система фасет;</li>
+<li>наличие множественных атрибутов.</li>
+</ul>
+
+<p>Отрицательные стороны:</p>
+
+<ul>
+<li>невозможность группировки по множественным атрибутам, если в группировке участвует обычный атрибут;</li>
+<li>Sphinx выдержал максимум 40 rps (скорее всего я не смог его правильно приготовить, но времени изучать глубже больше не было).</li>
+</ul>
+
+<p>Далее выбор пал на <strong>golang</strong> + <strong>tarantool</strong>.</p>
+
+<p>Положительные стороны:</p>
+
+<ul>
+<li>развернутая документация;</li>
+<li>поддержка <strong>sql</strong>;</li>
+<li>поддержка <strong>lua</strong>-скриптов для реализации логики на стороне БД;</li>
+<li>возможность указать количество памяти для <strong>vanyl</strong>-движка;</li>
+<li>компактность хранения данных в <strong>memrx</strong>-движке;</li>
+<li>очень быстрый для фильтрации.</li>
+</ul>
+
+<p>Отрицательные стороны:</p>
+
+<ul>
+<li>поддержка <strong>sql</strong> только в <strong>alpha</strong>-версии;</li>
+<li>не всегда очевидная работа планировщика запросов;</li>
+<li>ответ в <strong>yaml</strong> не всегда удобно парсить;</li>
+<li>не очень удобный клиент на <strong>golang</strong></li>
+<li>медленно работают запросы с группировкой.</li>
+</ul>
+
+<p>С помощью данной связки технологий я сильно продвинулся, на затем уперся в производительность. Стало ясно, что нужно писать собственных механизм хранения данных в памяти.</p>
+
+<p>После нескольких ночей появился сплав из прямых индексов по данным, в которых идентификаторы строк отсортированы, а также эмпирически выбраны наборы фильтров, для которых следует использовать <strong>fullscan</strong>.</p>
+
+<p>Особенностью механизм &ldquo;собственной&rdquo; фильтрации было то, что мне пришлось придумать, как пересекать упорядоченные множества &ldquo;слева&rdquo;. Позднее я увидел в чате, что подобные алгоритмы относятся к <strong>sorted stream intersection</strong>.</p>
+
+<h2 id="финал">Финал</h2>
+
+<p>Финальный раунд проходил автоматически, но для обстрела применялись &ldquo;особые&rdquo; волны с засекреченным <strong>rps</strong>. Я занял 53 место.</p>
+
+<h2 id="заключение">Заключение</h2>
+
+<p>Мне очень понравился конкурс. Это очень мощный стимул изучать что-то новое в совершенно разных областях. По итогам я узнал/изучил:</p>
+
+<ul>
+<li>представление о <strong>golang</strong>;</li>
+<li>опыт работы с <strong>gorutine</strong>;</li>
+<li>особенности работы <strong>GC</strong>;</li>
+<li>особенность алгоритма Нейгла и флаг tcp no delay при работе с сокетами;</li>
+<li>способы упаковки и хранения данных: <strong>delta-compression</strong>, <strong>bitset</strong>;</li>
+<li>особенности парсеров <strong>json</strong>;</li>
+<li>какие есть утечки памяти в <strong>php</strong>;</li>
+<li>навык написания кода: от пилотного прототипа до дальнейшего развития в условиях проверки разных гипотез.</li>
+</ul>
+
+<p><strong>Исходники</strong></p>
+
+<ul>
+<li>итоговое решение: <a href="https://github.com/rsimkin/highloadcup-2018" title="https://github.com/rsimkin/highloadcup-2018">https://github.com/rsimkin/highloadcup-2018</a></li>
+<li>BitSet, который бы помог: <a href="https://github.com/rsimkin/basic-bitset" title="https://github.com/rsimkin/basic-bitset">https://github.com/rsimkin/basic-bitset</a></li>
+</ul>
+
+
+        
+
+        
+
+        
+      </article>
+
+      
+        <ul class="pager blog-pager">
+          
+            <li class="previous">
+              <a href="https://rsimkin.github.io/blog/post/phpstrom-annotations/" data-toggle="tooltip" data-placement="top" title="Использование аннотаций в PHP Storm">&larr; Предыдущий</a>
+            </li>
+          
+          
+        </ul>
+      
+
+
+      
+
+    </div>
+  </div>
+</div>
+
+    <footer>
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+        <ul class="list-inline text-center footer-links">
+          
+              <li>
+                <a href="mailto:r.s.simkin@yandex.ru" title="Email me">
+                  <span class="fa-stack fa-lg">
+                    <i class="fas fa-circle fa-stack-2x"></i>
+                    <i class="fas fa-envelope fa-stack-1x fa-inverse"></i>
+                  </span>
+                </a>
+              </li>
+              <li>
+                <a href="https://github.com/rsimkin" title="GitHub">
+                  <span class="fa-stack fa-lg">
+                    <i class="fas fa-circle fa-stack-2x"></i>
+                    <i class="fab fa-github fa-stack-1x fa-inverse"></i>
+                  </span>
+                </a>
+              </li>
+              <li>
+                <a href="https://telegram.me/roman_simkin" title="Telegram">
+                  <span class="fa-stack fa-lg">
+                    <i class="fas fa-circle fa-stack-2x"></i>
+                    <i class="fab fa-telegram fa-stack-1x fa-inverse"></i>
+                  </span>
+                </a>
+              </li>
+          
+        </ul>
+        <p class="credits copyright text-muted">
+          
+            
+              Симкин Роман
+            
+          
+
+          &nbsp;&bull;&nbsp;&copy;
+          
+            2019
+          
+
+          
+            &nbsp;&bull;&nbsp;
+            <a href="https://rsimkin.github.io/blog/">Backend-заметки</a>
+          
+        </p>
+        
+        <p class="credits theme-by text-muted">
+          На базе <a href="http://gohugo.io">Hugo v0.53</a> &nbsp;&bull;&nbsp; Тема <a href="https://github.com/halogenica/beautifulhugo">Beautiful Hugo</a> на базе <a href="http://deanattali.com/beautiful-jekyll/">Beautiful Jekyll</a>
+          
+        </p>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.7.1/katex.min.js" integrity="sha384-/y1Nn9+QQAipbNQWU65krzJralCnuOasHncUFXGkdwntGeSvQicrYkiUBwsgUqc1" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.7.1/contrib/auto-render.min.js" integrity="sha384-dq1/gEHSxPZQ7DdrM82ID4YVol9BYyU7GbWlIwnwyPzotpoc57wDw/guX8EaYGPx" crossorigin="anonymous"></script>
+<script src="https://code.jquery.com/jquery-1.12.4.min.js" integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ=" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+<script src="https://rsimkin.github.io/blog/js/main.js"></script><script> renderMathInElement(document.body); </script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/photoswipe/4.1.2/photoswipe.min.js" integrity="sha384-QELNnmcmU8IR9ZAykt67vGr9/rZJdHbiWi64V88fCPaOohUlHCqUD/unNN0BXSqy" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/photoswipe/4.1.2/photoswipe-ui-default.min.js" integrity="sha384-m67o7SkQ1ALzKZIFh4CiTA8tmadaujiTa9Vu+nqPSwDOqHrDmxLezTdFln8077+q" crossorigin="anonymous"></script>
+<script src="https://rsimkin.github.io/blog/js/load-photoswipe.js"></script>
+
+
+
+
+
+
+
+
+  </body>
+</html>
+

@@ -8,10 +8,20 @@
     <language>ru-ru</language>
     <managingEditor>r.s.simkin@yandex.ru (Симкин Роман)</managingEditor>
     <webMaster>r.s.simkin@yandex.ru (Симкин Роман)</webMaster>
-    <lastBuildDate>Sun, 09 Dec 2018 13:25:58 +0000</lastBuildDate>
+    <lastBuildDate>Tue, 19 Feb 2019 10:29:23 +0300</lastBuildDate>
     
 	<atom:link href="https://rsimkin.github.io/blog/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title></title>
+      <link>https://rsimkin.github.io/blog/post/highloadcup-2018/</link>
+      <pubDate>Tue, 19 Feb 2019 10:29:23 +0300</pubDate>
+      <author>r.s.simkin@yandex.ru (Симкин Роман)</author>
+      <guid>https://rsimkin.github.io/blog/post/highloadcup-2018/</guid>
+      <description>Highloadcup 2018 Введение В данной статье я хочу рассказать о своем опыте участие в конкурсе Highloadcup 2018 (https://highloadcup.ru/ru/) от Mail.ru. о конкурсе я узнал из поста на хабре https://habr.com/ru/company/mailru/blog/433066/, а изначальной мотивацией принять участие было желание более опытных коллег посоревноваться.
+В рамках конкурса нужно было спроектировать и упаковать в Docker приложение, которое реализовывает несложное, но объемное по бизнес-логике REST API. Требуется реализовать 4 GET-запроса и 3 POST-запроса. Затем решение нужно отправить в docker-registry, после оно будет обстрелено с помощью yandex-tank разными профилями обстрела.</description>
+    </item>
     
     <item>
       <title>Использование аннотаций в PHP Storm</title>
