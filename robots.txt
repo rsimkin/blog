@@ -1,0 +1,2 @@
+User-agent: *
+Sitemap: https://rsimkin.github.io/sitemap.xml
