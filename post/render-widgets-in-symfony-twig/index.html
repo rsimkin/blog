@@ -52,7 +52,7 @@ WidgetController Данный способ предполагает, что ви
         "@type": "ListItem",
         "position": 3,
         "item": {
-          "@id": "https://rsimkin.github.io/post/%D0%B2%D1%81%D1%82%D1%80%D0%B0%D0%B8%D0%B2%D0%B0%D0%B5%D0%BC-%D0%B2%D1%8B%D0%B7%D0%BE%D0%B2-%D0%BA%D0%BE%D0%BD%D1%82%D1%80%D0%BE%D0%BB%D0%BB%D0%B5%D1%80%D0%BE%D0%B2-%D0%B2-twig-%D1%88%D0%B0%D0%B1%D0%BB%D0%BE%D0%BD%D1%8B-%D0%B1%D1%8B%D1%81%D1%82%D1%80%D0%BE/",
+          "@id": "https://rsimkin.github.io/post/render-widgets-in-symfony-twig/",
           "name": "Насколько &#34;быстро&#34; можно вставить в twig шаблоны виджет"
         }
     }]
@@ -74,7 +74,7 @@ WidgetController Данный способ предполагает, что ви
   "dateModified" : "2019-02-22T21:45:45",
   "image" : "https://rsimkin.github.io/",
   "keywords" : [ "symfony, twig" ],
-  "mainEntityOfPage" : "https://rsimkin.github.io/post/%D0%B2%D1%81%D1%82%D1%80%D0%B0%D0%B8%D0%B2%D0%B0%D0%B5%D0%BC-%D0%B2%D1%8B%D0%B7%D0%BE%D0%B2-%D0%BA%D0%BE%D0%BD%D1%82%D1%80%D0%BE%D0%BB%D0%BB%D0%B5%D1%80%D0%BE%D0%B2-%D0%B2-twig-%D1%88%D0%B0%D0%B1%D0%BB%D0%BE%D0%BD%D1%8B-%D0%B1%D1%8B%D1%81%D1%82%D1%80%D0%BE/",
+  "mainEntityOfPage" : "https://rsimkin.github.io/post/render-widgets-in-symfony-twig/",
   "publisher" : {
     "@type": "Organization",
     "name" : "https://rsimkin.github.io/",
@@ -92,14 +92,14 @@ WidgetController Данный способ предполагает, что ви
 <meta property="og:description" content="Введение В данной статье речь пойдет о том, как организовать код так, чтобы иметь возможность вставлять в разных twig-шаблонах одинаковые блоки (виджеты). Рассмотрим несколько вариантов реализации такого механизма.
 WidgetController Данный способ предполагает, что виджеты являются методами контроллера. Пример &lt;?php namespace App\Controller; use Symfony\Bundle\FrameworkBundle\Controller\AbstractController; use Symfony\Component\HttpFoundation\Response; class WidgetController extends AbstractController { public function widget(): Response { return $this-&gt;render(&#39;widget.html.twig&#39;, [&#39;number&#39; =&gt; rand()]); } } 
 В шаблоне блок можно отрисовать так: {{ render(controller(&#39;App\\Controller\\WidgetController:widget&#39;)) }}">
-<meta property="og:url" content="https://rsimkin.github.io/post/%D0%B2%D1%81%D1%82%D1%80%D0%B0%D0%B8%D0%B2%D0%B0%D0%B5%D0%BC-%D0%B2%D1%8B%D0%B7%D0%BE%D0%B2-%D0%BA%D0%BE%D0%BD%D1%82%D1%80%D0%BE%D0%BB%D0%BB%D0%B5%D1%80%D0%BE%D0%B2-%D0%B2-twig-%D1%88%D0%B0%D0%B1%D0%BB%D0%BE%D0%BD%D1%8B-%D0%B1%D1%8B%D1%81%D1%82%D1%80%D0%BE/" />
+<meta property="og:url" content="https://rsimkin.github.io/post/render-widgets-in-symfony-twig/" />
 <meta property="og:type" content="website" />
 <meta property="og:site_name" content="Backend-заметки" />
   <meta name="twitter:title" content="Насколько &#34;быстро&#34; можно вставить в twig-шаблоны виджет" />
   <meta name="twitter:description" content="Введение В данной статье речь пойдет о том, как организовать код так, чтобы иметь возможность вставлять в разных twig-шаблонах одинаковые блоки (виджеты). Рассмотрим несколько вариантов реализации …">
   <meta name="twitter:card" content="summary" />
   <meta name="twitter:card" content="summary" />
-  <meta property="og:url" content="https://rsimkin.github.io/post/%D0%B2%D1%81%D1%82%D1%80%D0%B0%D0%B8%D0%B2%D0%B0%D0%B5%D0%BC-%D0%B2%D1%8B%D0%B7%D0%BE%D0%B2-%D0%BA%D0%BE%D0%BD%D1%82%D1%80%D0%BE%D0%BB%D0%BB%D0%B5%D1%80%D0%BE%D0%B2-%D0%B2-twig-%D1%88%D0%B0%D0%B1%D0%BB%D0%BE%D0%BD%D1%8B-%D0%B1%D1%8B%D1%81%D1%82%D1%80%D0%BE/" />
+  <meta property="og:url" content="https://rsimkin.github.io/post/render-widgets-in-symfony-twig/" />
   <meta property="og:type" content="website" />
   <meta property="og:site_name" content="Backend-заметки" />
 
