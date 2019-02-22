@@ -3,6 +3,11 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>https://rsimkin.github.io/post/%D0%B2%D1%81%D1%82%D1%80%D0%B0%D0%B8%D0%B2%D0%B0%D0%B5%D0%BC-%D0%B2%D1%8B%D0%B7%D0%BE%D0%B2-%D0%BA%D0%BE%D0%BD%D1%82%D1%80%D0%BE%D0%BB%D0%BB%D0%B5%D1%80%D0%BE%D0%B2-%D0%B2-twig-%D1%88%D0%B0%D0%B1%D0%BB%D0%BE%D0%BD%D1%8B-%D0%B1%D1%8B%D1%81%D1%82%D1%80%D0%BE/</loc>
+    <lastmod>2019-02-22T21:45:45+03:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://rsimkin.github.io/post/highloadcup-2018/</loc>
     <lastmod>2019-02-19T10:29:23+03:00</lastmod>
   </url>
@@ -70,7 +75,7 @@
   
   <url>
     <loc>https://rsimkin.github.io/post/</loc>
-    <lastmod>2019-02-19T10:29:23+03:00</lastmod>
+    <lastmod>2019-02-22T21:45:45+03:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -87,6 +92,12 @@
   </url>
   
   <url>
+    <loc>https://rsimkin.github.io/tags/symfony/</loc>
+    <lastmod>2019-02-22T21:45:45+03:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
     <loc>https://rsimkin.github.io/tags/</loc>
     <lastmod>2018-12-03T16:03:58+00:00</lastmod>
     <priority>0</priority>
@@ -95,6 +106,12 @@
   <url>
     <loc>https://rsimkin.github.io/tags/tarantool/</loc>
     <lastmod>2019-02-19T10:29:23+03:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://rsimkin.github.io/tags/twig/</loc>
+    <lastmod>2019-02-22T21:45:45+03:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -112,7 +129,7 @@
   
   <url>
     <loc>https://rsimkin.github.io/</loc>
-    <lastmod>2019-02-19T10:29:23+03:00</lastmod>
+    <lastmod>2019-02-22T21:45:45+03:00</lastmod>
   </url>
   
   <url>
