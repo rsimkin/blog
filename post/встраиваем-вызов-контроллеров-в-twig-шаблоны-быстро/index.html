@@ -72,7 +72,7 @@ WidgetController
 Данный способ предполагает, что виджеты являются методами контроллера. Пример &amp;lt;?php namespace App\\Controller; use Symfony\\Bundle\\FrameworkBundle\\Controller\\AbstractController; use Symfony\\Component\\HttpFoundation\\Response; class WidgetController extends AbstractController { public function widget(): Response { return $this-&amp;gt;render(&amp;#39;widget.html.twig&amp;#39;, \[&amp;#39;number&amp;#39; =&amp;gt; rand()\]); } } 
 В шаблоне блок можно отрисовать так: {{ render(controller(&amp;#39;App\\Controller\\WidgetController:widget&amp;#39;)) }}",
   "inLanguage" : "ru",
-  "wordCount": 266,
+  "wordCount": 265,
   "datePublished" : "2019-02-22T21:45:45",
   "dateModified" : "2019-02-22T21:45:45",
   "image" : "https://rsimkin.github.io/",
@@ -321,50 +321,52 @@ WidgetController
 
 <p><strong>Twig extension</strong>
 С помощью данного метода можно реализовать логику получения данных, аналогичную первому методу, но без оверхеда, связанного с созданем подзапроса. Пример:
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-twig" data-lang="twig">&lt;?php
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-php" data-lang="php"><span style="color:#75715e">&lt;?php</span>
 
-namespace App\Twig;
+<span style="color:#66d9ef">namespace</span> <span style="color:#a6e22e">App\Twig</span>;
 
-use Twig\Extension\AbstractExtension;
-use Twig\TwigFunction;
+<span style="color:#66d9ef">use</span> <span style="color:#a6e22e">Twig\Extension\AbstractExtension</span>;
+<span style="color:#66d9ef">use</span> <span style="color:#a6e22e">Twig\TwigFunction</span>;
 
-class WidgetExtension extends AbstractExtension
+<span style="color:#66d9ef">class</span> <span style="color:#a6e22e">WidgetExtension</span> <span style="color:#66d9ef">extends</span> <span style="color:#a6e22e">AbstractExtension</span>
 {
-    /** @var \Twig_Environment */
-    private $twig;
+    <span style="color:#e6db74">/** @var \Twig_Environment */</span>
+    <span style="color:#66d9ef">private</span> $twig;
 
-    /**
-     * @param \Twig_Environment $twig
-     */
-    public function __construct(\Twig_Environment $twig)
+    <span style="color:#e6db74">/**
+</span><span style="color:#e6db74">     * @param \Twig_Environment $twig
+</span><span style="color:#e6db74">     */</span>
+    <span style="color:#66d9ef">public</span> <span style="color:#66d9ef">function</span> __construct(<span style="color:#a6e22e">\Twig_Environment</span> $twig)
     {
-        $this-&gt;twig = $twig;
+        $this<span style="color:#f92672">-&gt;</span><span style="color:#a6e22e">twig</span> <span style="color:#f92672">=</span> $twig;
     }
 
-    /**
-     * @return array
-     */
-    public function getFunctions(): array
+    <span style="color:#e6db74">/**
+</span><span style="color:#e6db74">     * @return array
+</span><span style="color:#e6db74">     */</span>
+    <span style="color:#66d9ef">public</span> <span style="color:#66d9ef">function</span> <span style="color:#a6e22e">getFunctions</span>()<span style="color:#f92672">:</span> <span style="color:#66d9ef">array</span>
     {
-        return [
-            new TwigFunction(&#39;lucky_widget&#39;, [$this, &#39;renderLuckyWidget&#39;], [&#39;is_safe&#39; =&gt; [&#39;html&#39;]]),
+        <span style="color:#66d9ef">return</span> [
+            <span style="color:#66d9ef">new</span> <span style="color:#a6e22e">TwigFunction</span>(<span style="color:#e6db74">&#39;lucky_widget&#39;</span>, [$this, <span style="color:#e6db74">&#39;renderLuckyWidget&#39;</span>], [<span style="color:#e6db74">&#39;is_safe&#39;</span> <span style="color:#f92672">=&gt;</span> [<span style="color:#e6db74">&#39;html&#39;</span>]]),
         ];
     }
 
-    /**
-     * @return string
-     * @throws \Twig_Error_Loader
-     * @throws \Twig_Error_Runtime
-     * @throws \Twig_Error_Syntax
-     */
-    public function renderLuckyWidget(): string
+    <span style="color:#e6db74">/**
+</span><span style="color:#e6db74">     * @return string
+</span><span style="color:#e6db74">     * @throws \Twig_Error_Loader
+</span><span style="color:#e6db74">     * @throws \Twig_Error_Runtime
+</span><span style="color:#e6db74">     * @throws \Twig_Error_Syntax
+</span><span style="color:#e6db74">     */</span>
+    <span style="color:#66d9ef">public</span> <span style="color:#66d9ef">function</span> <span style="color:#a6e22e">renderLuckyWidget</span>()<span style="color:#f92672">:</span> <span style="color:#a6e22e">string</span>
     {
-        return $this-&gt;twig-&gt;render(&#39;widget.html.twig&#39;, [&#39;number&#39; =&gt; rand()]);
+        <span style="color:#66d9ef">return</span> $this<span style="color:#f92672">-&gt;</span><span style="color:#a6e22e">twig</span><span style="color:#f92672">-&gt;</span><span style="color:#a6e22e">render</span>(<span style="color:#e6db74">&#39;widget.html.twig&#39;</span>, [<span style="color:#e6db74">&#39;number&#39;</span> <span style="color:#f92672">=&gt;</span> <span style="color:#a6e22e">rand</span>()]);
     }
-}</code></pre></div></p>
+}
+</code></pre></div></p>
 
-<p><strong>Сравнение</strong>
-Чтобы сравнить, какой из перечисленных выше способов отработает быстрее, создадим (небольшой проект )[<a href="https://github.com/rsimkin/symfony-embed-controllers-performance">https://github.com/rsimkin/symfony-embed-controllers-performance</a>] и измерим с помощью простого бенчмарка <strong>ab</strong> скорость отрисовки.
+<p><strong>Сравнение</strong></p>
+
+<p>Чтобы сравнить, какой из перечисленных выше способов отработает быстрее, создадим <a href="https://github.com/rsimkin/symfony-embed-controllers-performance">небольшой проект</a> и измерим с помощью простого бенчмарка <strong>ab</strong> скорость отрисовки.
 Ниже представлен график времени отрисовки для всех трех методов.</p>
 
 
