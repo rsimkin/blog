@@ -10,15 +10,13 @@
   <title>Насколько &#34;быстро&#34; можно вставить в twig-шаблоны виджет - Backend-заметки</title>
   <meta property="og:title" content="Насколько &#34;быстро&#34; можно вставить в twig-шаблоны виджет" />
   <meta name="twitter:title" content="Насколько &#34;быстро&#34; можно вставить в twig-шаблоны виджет" />
-  <meta name="description" content="В данной статье речь пойдет о том, как организовать код так, чтобы иметь возможность вставлять в разных twig-шаблонах одинаковые блоки (виджеты). Рассмотрим несколько вариантов реализации такого механизма.
-WidgetController
-Данный способ предполагает, что виджеты являются методами контроллера. Пример &lt;?php namespace App\\Controller; use Symfony\\Bundle\\FrameworkBundle\\Controller\\AbstractController; use Symfony\\Component\\HttpFoundation\\Response; class WidgetController extends AbstractController { public function widget(): Response { return $this-&gt;render(&#39;widget.html.twig&#39;, \[&#39;number&#39; =&gt; rand()\]); } } 
+  <meta name="description" content="Введение В данной статье речь пойдет о том, как организовать код так, чтобы иметь возможность вставлять в разных twig-шаблонах одинаковые блоки (виджеты). Рассмотрим несколько вариантов реализации такого механизма.
+WidgetController Данный способ предполагает, что виджеты являются методами контроллера. Пример &lt;?php namespace App\\Controller; use Symfony\\Bundle\\FrameworkBundle\\Controller\\AbstractController; use Symfony\\Component\\HttpFoundation\\Response; class WidgetController extends AbstractController { public function widget(): Response { return $this-&gt;render(&#39;widget.html.twig&#39;, [&#39;number&#39; =&gt; rand()]); } } 
 В шаблоне блок можно отрисовать так: {{ render(controller(&#39;App\\Controller\\WidgetController:widget&#39;)) }}">
-  <meta property="og:description" content="В данной статье речь пойдет о том, как организовать код так, чтобы иметь возможность вставлять в разных twig-шаблонах одинаковые блоки (виджеты). Рассмотрим несколько вариантов реализации такого механизма.
-WidgetController
-Данный способ предполагает, что виджеты являются методами контроллера. Пример &lt;?php namespace App\\Controller; use Symfony\\Bundle\\FrameworkBundle\\Controller\\AbstractController; use Symfony\\Component\\HttpFoundation\\Response; class WidgetController extends AbstractController { public function widget(): Response { return $this-&gt;render(&#39;widget.html.twig&#39;, \[&#39;number&#39; =&gt; rand()\]); } } 
+  <meta property="og:description" content="Введение В данной статье речь пойдет о том, как организовать код так, чтобы иметь возможность вставлять в разных twig-шаблонах одинаковые блоки (виджеты). Рассмотрим несколько вариантов реализации такого механизма.
+WidgetController Данный способ предполагает, что виджеты являются методами контроллера. Пример &lt;?php namespace App\\Controller; use Symfony\\Bundle\\FrameworkBundle\\Controller\\AbstractController; use Symfony\\Component\\HttpFoundation\\Response; class WidgetController extends AbstractController { public function widget(): Response { return $this-&gt;render(&#39;widget.html.twig&#39;, [&#39;number&#39; =&gt; rand()]); } } 
 В шаблоне блок можно отрисовать так: {{ render(controller(&#39;App\\Controller\\WidgetController:widget&#39;)) }}">
-  <meta name="twitter:description" content="В данной статье речь пойдет о том, как организовать код так, чтобы иметь возможность вставлять в разных twig-шаблонах одинаковые блоки (виджеты). Рассмотрим несколько вариантов реализации такого …">
+  <meta name="twitter:description" content="Введение В данной статье речь пойдет о том, как организовать код так, чтобы иметь возможность вставлять в разных twig-шаблонах одинаковые блоки (виджеты). Рассмотрим несколько вариантов реализации …">
   <meta name="author" content="Симкин Роман"/><script type="application/ld+json">
 {
     "@context": "http://schema.org",
@@ -67,12 +65,11 @@ WidgetController
     "name" : "Симкин Роман"
   },
   "headline": "Насколько &#34;быстро&#34; можно вставить в twig-шаблоны виджет",
-  "description" : "В данной статье речь пойдет о том, как организовать код так, чтобы иметь возможность вставлять в разных twig-шаблонах одинаковые блоки (виджеты). Рассмотрим несколько вариантов реализации такого механизма.
-WidgetController
-Данный способ предполагает, что виджеты являются методами контроллера. Пример &amp;lt;?php namespace App\\Controller; use Symfony\\Bundle\\FrameworkBundle\\Controller\\AbstractController; use Symfony\\Component\\HttpFoundation\\Response; class WidgetController extends AbstractController { public function widget(): Response { return $this-&amp;gt;render(&amp;#39;widget.html.twig&amp;#39;, \[&amp;#39;number&amp;#39; =&amp;gt; rand()\]); } } 
+  "description" : "Введение В данной статье речь пойдет о том, как организовать код так, чтобы иметь возможность вставлять в разных twig-шаблонах одинаковые блоки (виджеты). Рассмотрим несколько вариантов реализации такого механизма.
+WidgetController Данный способ предполагает, что виджеты являются методами контроллера. Пример &amp;lt;?php namespace App\\Controller; use Symfony\\Bundle\\FrameworkBundle\\Controller\\AbstractController; use Symfony\\Component\\HttpFoundation\\Response; class WidgetController extends AbstractController { public function widget(): Response { return $this-&amp;gt;render(&amp;#39;widget.html.twig&amp;#39;, [&amp;#39;number&amp;#39; =&amp;gt; rand()]); } } 
 В шаблоне блок можно отрисовать так: {{ render(controller(&amp;#39;App\\Controller\\WidgetController:widget&amp;#39;)) }}",
   "inLanguage" : "ru",
-  "wordCount": 289,
+  "wordCount": 290,
   "datePublished" : "2019-02-22T21:45:45",
   "dateModified" : "2019-02-22T21:45:45",
   "image" : "https://rsimkin.github.io/",
@@ -92,15 +89,14 @@ WidgetController
 </script>
 
 <meta property="og:title" content="Насколько &#34;быстро&#34; можно вставить в twig-шаблоны виджет" />
-<meta property="og:description" content="В данной статье речь пойдет о том, как организовать код так, чтобы иметь возможность вставлять в разных twig-шаблонах одинаковые блоки (виджеты). Рассмотрим несколько вариантов реализации такого механизма.
-WidgetController
-Данный способ предполагает, что виджеты являются методами контроллера. Пример &lt;?php namespace App\\Controller; use Symfony\\Bundle\\FrameworkBundle\\Controller\\AbstractController; use Symfony\\Component\\HttpFoundation\\Response; class WidgetController extends AbstractController { public function widget(): Response { return $this-&gt;render(&#39;widget.html.twig&#39;, \[&#39;number&#39; =&gt; rand()\]); } } 
+<meta property="og:description" content="Введение В данной статье речь пойдет о том, как организовать код так, чтобы иметь возможность вставлять в разных twig-шаблонах одинаковые блоки (виджеты). Рассмотрим несколько вариантов реализации такого механизма.
+WidgetController Данный способ предполагает, что виджеты являются методами контроллера. Пример &lt;?php namespace App\\Controller; use Symfony\\Bundle\\FrameworkBundle\\Controller\\AbstractController; use Symfony\\Component\\HttpFoundation\\Response; class WidgetController extends AbstractController { public function widget(): Response { return $this-&gt;render(&#39;widget.html.twig&#39;, [&#39;number&#39; =&gt; rand()]); } } 
 В шаблоне блок можно отрисовать так: {{ render(controller(&#39;App\\Controller\\WidgetController:widget&#39;)) }}">
 <meta property="og:url" content="https://rsimkin.github.io/post/%D0%B2%D1%81%D1%82%D1%80%D0%B0%D0%B8%D0%B2%D0%B0%D0%B5%D0%BC-%D0%B2%D1%8B%D0%B7%D0%BE%D0%B2-%D0%BA%D0%BE%D0%BD%D1%82%D1%80%D0%BE%D0%BB%D0%BB%D0%B5%D1%80%D0%BE%D0%B2-%D0%B2-twig-%D1%88%D0%B0%D0%B1%D0%BB%D0%BE%D0%BD%D1%8B-%D0%B1%D1%8B%D1%81%D1%82%D1%80%D0%BE/" />
 <meta property="og:type" content="website" />
 <meta property="og:site_name" content="Backend-заметки" />
   <meta name="twitter:title" content="Насколько &#34;быстро&#34; можно вставить в twig-шаблоны виджет" />
-  <meta name="twitter:description" content="В данной статье речь пойдет о том, как организовать код так, чтобы иметь возможность вставлять в разных twig-шаблонах одинаковые блоки (виджеты). Рассмотрим несколько вариантов реализации такого …">
+  <meta name="twitter:description" content="Введение В данной статье речь пойдет о том, как организовать код так, чтобы иметь возможность вставлять в разных twig-шаблонах одинаковые блоки (виджеты). Рассмотрим несколько вариантов реализации …">
   <meta name="twitter:card" content="summary" />
   <meta name="twitter:card" content="summary" />
   <meta property="og:url" content="https://rsimkin.github.io/post/%D0%B2%D1%81%D1%82%D1%80%D0%B0%D0%B8%D0%B2%D0%B0%D0%B5%D0%BC-%D0%B2%D1%8B%D0%B7%D0%BE%D0%B2-%D0%BA%D0%BE%D0%BD%D1%82%D1%80%D0%BE%D0%BB%D0%BB%D0%B5%D1%80%D0%BE%D0%B2-%D0%B2-twig-%D1%88%D0%B0%D0%B1%D0%BB%D0%BE%D0%BD%D1%8B-%D0%B1%D1%8B%D1%81%D1%82%D1%80%D0%BE/" />
@@ -284,9 +280,13 @@ WidgetController
   <div class="row">
     <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
       <article role="main" class="blog-post">
-        <p>В данной статье речь пойдет о том, как организовать код так, чтобы иметь возможность вставлять в разных twig-шаблонах одинаковые блоки (виджеты). Рассмотрим несколько вариантов реализации такого механизма.</p>
+        
 
-<p><strong>WidgetController</strong></p>
+<h4 id="введение">Введение</h4>
+
+<p>В данной статье речь пойдет о том, как организовать код так, чтобы иметь возможность вставлять в разных twig-шаблонах одинаковые блоки (виджеты). Рассмотрим несколько вариантов реализации такого механизма.</p>
+
+<h4 id="widgetcontroller">WidgetController</h4>
 
 <p>Данный способ предполагает, что виджеты являются методами контроллера. Пример
 <div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-php" data-lang="php"><span style="color:#75715e">&lt;?php</span>
@@ -300,7 +300,7 @@ WidgetController
 {
 	<span style="color:#66d9ef">public</span> <span style="color:#66d9ef">function</span> <span style="color:#a6e22e">widget</span>()<span style="color:#f92672">:</span> <span style="color:#a6e22e">Response</span>
 	{
-		<span style="color:#66d9ef">return</span> $this<span style="color:#f92672">-&gt;</span><span style="color:#a6e22e">render</span>(<span style="color:#e6db74">&#39;widget.html.twig&#39;</span>, <span style="color:#a6e22e">\</span>[<span style="color:#e6db74">&#39;number&#39;</span> <span style="color:#f92672">=&gt;</span> <span style="color:#a6e22e">rand</span>()<span style="color:#a6e22e">\</span>]);
+		<span style="color:#66d9ef">return</span> $this<span style="color:#f92672">-&gt;</span><span style="color:#a6e22e">render</span>(<span style="color:#e6db74">&#39;widget.html.twig&#39;</span>, [<span style="color:#e6db74">&#39;number&#39;</span> <span style="color:#f92672">=&gt;</span> <span style="color:#a6e22e">rand</span>()]);
 	}
 }
 </code></pre></div></p>
@@ -314,24 +314,26 @@ WidgetController
 <p>Rendering embedded controllers is &ldquo;heavier&rdquo; than including a template or calling a custom Twig function. Unless you&rsquo;re planning on <a href="https://symfony.com/doc/current/http_cache/esi.html"><em>caching the fragment</em></a>, avoid embedding many controllers.</p>
 </blockquote>
 
-<p><strong>Include</strong>
-Самый просто механизм вставки блоков без доп. логики
+<h4 id="include">Include</h4>
+
+<p>Самый просто механизм вставки блоков без доп. логики
 <div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-twig" data-lang="twig"><span style="color:#75715e">{%</span> <span style="color:#66d9ef">include</span> <span style="color:#e6db74">&#39;widget.html.twig&#39;</span> with <span style="color:#f92672">{</span>number<span style="color:#f92672">:</span>random<span style="color:#f92672">()}</span> <span style="color:#75715e">%}</span></code></pre></div>
 Если для виджета требуется получение данных, то данный способ не подойдет.</p>
 
-<p><strong>Twig extension</strong>
-С помощью данного метода можно реализовать логику получения данных, аналогичную первому методу, но без оверхеда, связанного с созданем подзапроса. Пример:
+<h4 id="twig-extension">Twig extension</h4>
+
+<p>С помощью данного метода можно реализовать логику получения данных, аналогичную первому методу, но без оверхеда, связанного с созданем подзапроса. Пример:
 <div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-php" data-lang="php"><span style="color:#75715e">&lt;?php</span>
 
-<span style="color:#66d9ef">namespace</span> <span style="color:#a6e22e">App\Twig</span>;
+<span style="color:#66d9ef">namespace</span> <span style="color:#a6e22e">App\\Twig</span>;
 
-<span style="color:#66d9ef">use</span> <span style="color:#a6e22e">Twig\Extension\AbstractExtension</span>;
-<span style="color:#66d9ef">use</span> <span style="color:#a6e22e">Twig\TwigFunction</span>;
+<span style="color:#66d9ef">use</span> <span style="color:#a6e22e">Twig\\Extension\\AbstractExtension</span>;
+<span style="color:#66d9ef">use</span> <span style="color:#a6e22e">Twig\\TwigFunction</span>;
 
 <span style="color:#66d9ef">class</span> <span style="color:#a6e22e">WidgetExtension</span> <span style="color:#66d9ef">extends</span> <span style="color:#a6e22e">AbstractExtension</span>
 {
-    <span style="color:#e6db74">/** @var \Twig_Environment */</span>
-    <span style="color:#66d9ef">private</span> $twig;
+<span style="color:#e6db74">/** @var \\Twig_Environment */</span>
+<span style="color:#66d9ef">private</span> $twig;
 
     <span style="color:#e6db74">/**
 </span><span style="color:#e6db74">     * @param \Twig_Environment $twig
@@ -340,7 +342,7 @@ WidgetController
     {
         $this<span style="color:#f92672">-&gt;</span><span style="color:#a6e22e">twig</span> <span style="color:#f92672">=</span> $twig;
     }
-
+    
     <span style="color:#e6db74">/**
 </span><span style="color:#e6db74">     * @return array
 </span><span style="color:#e6db74">     */</span>
@@ -350,7 +352,7 @@ WidgetController
             <span style="color:#66d9ef">new</span> <span style="color:#a6e22e">TwigFunction</span>(<span style="color:#e6db74">&#39;lucky_widget&#39;</span>, [$this, <span style="color:#e6db74">&#39;renderLuckyWidget&#39;</span>], [<span style="color:#e6db74">&#39;is_safe&#39;</span> <span style="color:#f92672">=&gt;</span> [<span style="color:#e6db74">&#39;html&#39;</span>]]),
         ];
     }
-
+    
     <span style="color:#e6db74">/**
 </span><span style="color:#e6db74">     * @return string
 </span><span style="color:#e6db74">     * @throws \Twig_Error_Loader
@@ -361,10 +363,11 @@ WidgetController
     {
         <span style="color:#66d9ef">return</span> $this<span style="color:#f92672">-&gt;</span><span style="color:#a6e22e">twig</span><span style="color:#f92672">-&gt;</span><span style="color:#a6e22e">render</span>(<span style="color:#e6db74">&#39;widget.html.twig&#39;</span>, [<span style="color:#e6db74">&#39;number&#39;</span> <span style="color:#f92672">=&gt;</span> <span style="color:#a6e22e">rand</span>()]);
     }
+
 }
 </code></pre></div></p>
 
-<p><strong>Сравнение</strong></p>
+<h4 id="сравнение">Сравнение</h4>
 
 <p>Чтобы сравнить, какой из перечисленных выше способов отработает быстрее, создадим <a href="https://github.com/rsimkin/symfony-embed-controllers-performance">небольшой проект</a> и измерим с помощью простого бенчмарка <strong>ab</strong> скорость отрисовки.
 Ниже представлен график времени отрисовки для всех трех методов.
@@ -387,7 +390,7 @@ WidgetController
 
 </div>
 
-Мы видим, что лучше всего себя показал <strong>twig extension</strong>. Однако, если мы обратим внимание на абсолютное значение времени отрисовки, выигрыш не кажется таким сущесвенным.</p>
+Мы видим, что лучше всего себя показал <strong>twig extension</strong>. Однако, если мы обратим внимание на абсолютное значение времени отрисовки, выигрыш не кажется таким существенным.</p>
 
 
         
