@@ -298,10 +298,10 @@ WidgetController Данный способ предполагает, что ви
 
 <span style="color:#66d9ef">class</span> <span style="color:#a6e22e">WidgetController</span> <span style="color:#66d9ef">extends</span> <span style="color:#a6e22e">AbstractController</span>
 {
-<span style="color:#66d9ef">public</span> <span style="color:#66d9ef">function</span> <span style="color:#a6e22e">widget</span>()<span style="color:#f92672">:</span> <span style="color:#a6e22e">Response</span>
-{
-<span style="color:#66d9ef">return</span> $this<span style="color:#f92672">-&gt;</span><span style="color:#a6e22e">render</span>(<span style="color:#e6db74">&#39;widget.html.twig&#39;</span>, [<span style="color:#e6db74">&#39;number&#39;</span> <span style="color:#f92672">=&gt;</span> <span style="color:#a6e22e">rand</span>()]);
-}
+	<span style="color:#66d9ef">public</span> <span style="color:#66d9ef">function</span> <span style="color:#a6e22e">widget</span>()<span style="color:#f92672">:</span> <span style="color:#a6e22e">Response</span>
+	{
+		<span style="color:#66d9ef">return</span> $this<span style="color:#f92672">-&gt;</span><span style="color:#a6e22e">render</span>(<span style="color:#e6db74">&#39;widget.html.twig&#39;</span>, [<span style="color:#e6db74">&#39;number&#39;</span> <span style="color:#f92672">=&gt;</span> <span style="color:#a6e22e">rand</span>()]);
+	}
 }
 </code></pre></div></p>
 
@@ -332,8 +332,8 @@ WidgetController Данный способ предполагает, что ви
 
 <span style="color:#66d9ef">class</span> <span style="color:#a6e22e">WidgetExtension</span> <span style="color:#66d9ef">extends</span> <span style="color:#a6e22e">AbstractExtension</span>
 {
-<span style="color:#e6db74">/** @var \Twig_Environment */</span>
-<span style="color:#66d9ef">private</span> $twig;
+	<span style="color:#e6db74">/** @var \Twig_Environment */</span>
+	<span style="color:#66d9ef">private</span> $twig;
 
     <span style="color:#e6db74">/**
 </span><span style="color:#e6db74">     * @param \Twig_Environment $twig
@@ -372,7 +372,7 @@ WidgetController Данный способ предполагает, что ви
 <p>Чтобы сравнить, какой из перечисленных выше способов отработает быстрее, создадим <a href="https://github.com/rsimkin/symfony-embed-controllers-performance">небольшой проект</a> и измерим с помощью простого бенчмарка <strong>ab</strong> скорость отрисовки.
 Ниже представлен график времени отрисовки для всех трех методов.</p>
 
-<p><img src="/uploads/img/render_time.png" alt="" /> Мы видим, что лучше всего себя показал <strong>twig extension</strong>. Однако, если мы обратим внимание на абсолютное значение времени отрисовки, выигрыш не кажется таким существенным.</p>
+<p><img src="/img/render_time.png" alt="" /> Мы видим, что лучше всего себя показал <strong>twig extension</strong>. Однако, если мы обратим внимание на абсолютное значение времени отрисовки, выигрыш не кажется таким существенным.</p>
 
 
         
