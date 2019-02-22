@@ -72,7 +72,7 @@ WidgetController
 Данный способ предполагает, что виджеты являются методами контроллера. Пример &amp;lt;?php namespace App\\Controller; use Symfony\\Bundle\\FrameworkBundle\\Controller\\AbstractController; use Symfony\\Component\\HttpFoundation\\Response; class WidgetController extends AbstractController { public function widget(): Response { return $this-&amp;gt;render(&amp;#39;widget.html.twig&amp;#39;, \[&amp;#39;number&amp;#39; =&amp;gt; rand()\]); } } 
 В шаблоне блок можно отрисовать так: {{ render(controller(&amp;#39;App\\Controller\\WidgetController:widget&amp;#39;)) }}",
   "inLanguage" : "ru",
-  "wordCount": 265,
+  "wordCount": 289,
   "datePublished" : "2019-02-22T21:45:45",
   "dateModified" : "2019-02-22T21:45:45",
   "image" : "https://rsimkin.github.io/",
@@ -367,7 +367,27 @@ WidgetController
 <p><strong>Сравнение</strong></p>
 
 <p>Чтобы сравнить, какой из перечисленных выше способов отработает быстрее, создадим <a href="https://github.com/rsimkin/symfony-embed-controllers-performance">небольшой проект</a> и измерим с помощью простого бенчмарка <strong>ab</strong> скорость отрисовки.
-Ниже представлен график времени отрисовки для всех трех методов.</p>
+Ниже представлен график времени отрисовки для всех трех методов.
+
+
+
+<div class="gallery caption-position-bottom caption-effect-slide hover-effect-zoom hover-transition" itemscope itemtype="http://schema.org/ImageGallery">
+	  
+
+<link rel="stylesheet" href="/css/hugo-easy-gallery.css" />
+<div class="box" >
+  <figure  itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+    <div class="img" style="background-image: url('https://rsimkin.github.io//img/render_time.png');">
+      <img itemprop="thumbnail" src="/img/render_time.png" />
+    </div>
+    <a href="/img/render_time.png" itemprop="contentUrl"></a>
+  </figure>
+</div>
+
+
+</div>
+
+Мы видим, что лучше всего себя показал <strong>twig extension</strong>. Однако, если мы обратим внимание на абсолютное значение времени отрисовки, выигрыш не кажется таким сущесвенным.</p>
 
 
         
