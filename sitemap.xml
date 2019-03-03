@@ -3,6 +3,11 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>https://rsimkin.github.io/post/%D0%BF%D1%80%D0%BE%D0%B3%D1%80%D0%B0%D0%BC%D0%BC%D1%81%D0%B8%D1%82-%D0%BF%D1%80%D0%B0%D0%B3%D0%BC%D0%B0%D1%82%D0%B8%D0%BA/</loc>
+    <lastmod>2019-03-03T20:26:51+03:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://rsimkin.github.io/post/render-widgets-in-symfony-twig/</loc>
     <lastmod>2019-02-22T21:45:45+03:00</lastmod>
   </url>
@@ -75,7 +80,7 @@
   
   <url>
     <loc>https://rsimkin.github.io/post/</loc>
-    <lastmod>2019-02-22T21:45:45+03:00</lastmod>
+    <lastmod>2019-03-03T20:26:51+03:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -129,7 +134,7 @@
   
   <url>
     <loc>https://rsimkin.github.io/</loc>
-    <lastmod>2019-02-22T21:45:45+03:00</lastmod>
+    <lastmod>2019-03-03T20:26:51+03:00</lastmod>
   </url>
   
   <url>
