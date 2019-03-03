@@ -7,9 +7,12 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
 
-  <title>Главная - Backend-заметки</title>
-  <meta property="og:title" content="Главная" />
-  <meta name="twitter:title" content="Главная" />
+  <title>Overview of all pages with the tag #Book - Backend-заметки</title>
+  <meta property="og:title" content="Overview of all pages with the tag #Book" />
+  <meta name="twitter:title" content="Overview of all pages with the tag #Book" />
+  <meta name="description" content="Overview of all pages with the tag #Book, such as: Программист-прагматик">
+  <meta property="og:description" content="Overview of all pages with the tag #Book, such as: Программист-прагматик">
+  <meta name="twitter:description" content="Overview of all pages with the tag #Book, such as: Программист-прагматик">
   <meta name="author" content="Симкин Роман"/><script type="application/ld+json">
 {
     "@context": "http://schema.org",
@@ -31,14 +34,14 @@
 }
 </script>
 
-<meta property="og:title" content="Главная" />
-<meta property="og:url" content="https://rsimkin.github.io/" />
+<meta property="og:title" content="Book" />
+<meta property="og:url" content="https://rsimkin.github.io/tags/book/" />
 <meta property="og:type" content="website" />
 <meta property="og:site_name" content="Backend-заметки" />
-  <meta name="twitter:title" content="Главная" />
+  <meta name="twitter:title" content="Book" />
   <meta name="twitter:card" content="summary" />
   <meta name="twitter:card" content="summary" />
-  <meta property="og:url" content="https://rsimkin.github.io/" />
+  <meta property="og:url" content="https://rsimkin.github.io/tags/book/" />
   <meta property="og:type" content="website" />
   <meta property="og:site_name" content="Backend-заметки" />
 
@@ -185,9 +188,9 @@
       <div class="container">
         <div class="row">
           <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
-            <div class="page-heading">
+            <div class="tags-heading">
               
-                <h1>Backend-заметки</h1>
+                <h1>Book</h1>
               
               
                 <hr class="small">
@@ -203,22 +206,21 @@
 
 
     
-  <div role="main" class="container">
+  <div class="container" role="main">
     <div class="row">
       <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
         
-
         <div class="posts-list">
-          
           
             <article class="post-preview">
               <a href="https://rsimkin.github.io/post/the-pragmatic-programmer/">
                 <h2 class="post-title">Программист-прагматик</h2>
-                
+
                 
               </a>
 
-              <span class="post-meta">
+              <p class="post-meta">
+                <span class="post-meta">
   
   
   <i class="fas fa-calendar"></i>&nbsp;Опубликовано Январь 3, 2019
@@ -231,6 +233,7 @@
 </span>
 
 
+              </p>
               <div class="post-entry">
                 
                   Введение В данной статье я хочу поделиться основными мыслями, которые я почерпнул из книги &ldquo;Программист прагматик&rdquo; Эндрю Хант, Дэвид Томас.
@@ -247,220 +250,10 @@
                   
                 </div>
               
-            </article>
-          
-            <article class="post-preview">
-              <a href="https://rsimkin.github.io/post/render-widgets-in-symfony-twig/">
-                <h2 class="post-title">Насколько &#34;быстро&#34; можно вставить в twig-шаблоны виджет</h2>
-                
-                
-              </a>
 
-              <span class="post-meta">
-  
-  
-  <i class="fas fa-calendar"></i>&nbsp;Опубликовано Январь 22, 2019
-  
-  
-  
-  Симкин Роман
-  
-  
-</span>
-
-
-              <div class="post-entry">
-                
-                  Введение В данной статье речь пойдет о том, как организовать код так, чтобы иметь возможность вставлять в разных twig-шаблонах одинаковые блоки (виджеты). Рассмотрим несколько вариантов реализации такого механизма.
-WidgetController Данный способ предполагает, что виджеты являются методами контроллера. Пример &lt;?php namespace App\Controller; use Symfony\Bundle\FrameworkBundle\Controller\AbstractController; use Symfony\Component\HttpFoundation\Response; class WidgetController extends AbstractController { public function widget(): Response { return $this-&gt;render(&#39;widget.html.twig&#39;, [&#39;number&#39; =&gt; rand()]); } } 
-В шаблоне блок можно отрисовать так: {{ render(controller(&#39;App\\Controller\\WidgetController:widget&#39;)) }}
-                  <a href="https://rsimkin.github.io/post/render-widgets-in-symfony-twig/" class="post-read-more">[Далее]</a>
-                
-              </div>
-
-              
-                <div class="blog-tags">
-                  
-                    <a href="https://rsimkin.github.io//tags/symfony/">symfony</a>&nbsp;
-                  
-                    <a href="https://rsimkin.github.io//tags/twig/">twig</a>&nbsp;
-                  
-                </div>
-              
-            </article>
-          
-            <article class="post-preview">
-              <a href="https://rsimkin.github.io/post/highloadcup-2018/">
-                <h2 class="post-title">Highloadcup 2018</h2>
-                
-                
-              </a>
-
-              <span class="post-meta">
-  
-  
-  <i class="fas fa-calendar"></i>&nbsp;Опубликовано Январь 19, 2019
-  
-  
-  
-  Симкин Роман
-  
-  
-</span>
-
-
-              <div class="post-entry">
-                
-                  Введение В данной статье я хочу рассказать о своем опыте участие в конкурсе Highloadcup 2018 от Mail.ru. О конкурсе я узнал из поста на хабре, а изначальной мотивацией принять участие было желание более опытных коллег посоревноваться.
-В рамках конкурса нужно было спроектировать и упаковать в Docker приложение, которое реализовывает несложное, но объемное по бизнес-логике REST API. Требуется реализовать 4 GET-запроса и 3 POST-запроса. Затем решение нужно отправить в docker-registry, после оно будет обстрелено с помощью yandex-tank разными профилями обстрела.
-                  <a href="https://rsimkin.github.io/post/highloadcup-2018/" class="post-read-more">[Далее]</a>
-                
-              </div>
-
-              
-                <div class="blog-tags">
-                  
-                    <a href="https://rsimkin.github.io//tags/sphinx/">sphinx</a>&nbsp;
-                  
-                    <a href="https://rsimkin.github.io//tags/golang/">golang</a>&nbsp;
-                  
-                    <a href="https://rsimkin.github.io//tags/tarantool/">tarantool</a>&nbsp;
-                  
-                    <a href="https://rsimkin.github.io//tags/reindexer/">reindexer</a>&nbsp;
-                  
-                </div>
-              
-            </article>
-          
-            <article class="post-preview">
-              <a href="https://rsimkin.github.io/post/phpstrom-annotations/">
-                <h2 class="post-title">Использование аннотаций в PHP Storm</h2>
-                
-                
-              </a>
-
-              <span class="post-meta">
-  
-  
-  <i class="fas fa-calendar"></i>&nbsp;Опубликовано Январь 9, 2018
-  
-  
-  
-  Симкин Роман
-  
-  
-</span>
-
-
-              <div class="post-entry">
-                
-                  Хочу поделиться с вами таким полезным функционалом, как аннотации. Чтобы проникнуться всей полезностью аннотаций, нужно чтобы:
- проект находился в контроле версий сообщение каждого коммита было выдержано в определенной нотации или хотя бы содержало ссылку на трекер (например, задача в JIRA).  Чтобы показать аннотации, нужно нажать слева от рабочий области текстового редактора PHP Storm.      Теперь мы видим авторов последних изменений каждой строки в файле, а при двойном клике на область аннотации мы увидим во всплывающем окне файлы, которые изменились вместе с изменениями текущей строки.
-                  <a href="https://rsimkin.github.io/post/phpstrom-annotations/" class="post-read-more">[Далее]</a>
-                
-              </div>
-
-              
-                <div class="blog-tags">
-                  
-                    <a href="https://rsimkin.github.io//tags/vcs/">vcs</a>&nbsp;
-                  
-                    <a href="https://rsimkin.github.io//tags/ide/">ide</a>&nbsp;
-                  
-                </div>
-              
-            </article>
-          
-            <article class="post-preview">
-              <a href="https://rsimkin.github.io/post/bitrix-notes/">
-                <h2 class="post-title">Практические советы по разработке на 1С-Битрикс</h2>
-                
-                
-              </a>
-
-              <span class="post-meta">
-  
-  
-  <i class="fas fa-calendar"></i>&nbsp;Опубликовано Январь 3, 2018
-  
-  
-  
-  Симкин Роман
-  
-  
-</span>
-
-
-              <div class="post-entry">
-                
-                  Введение В данной статье я хочу отразить ряд советов и подсказок по работе с 1С-Битрикс, а также оградить читателя от подводных камней, с которыми я сталкивался сам или сталкивалась команда.
-Важно заметить, что разработка на 1С-Битрикс имеет свою специфику, которую в данной статье я не подвергаю критике.
-Это всего лишь еще один инструмент для бизнеса, основанного на веб-разработке, и нужно попробовать использовать его на максимум.
-Агенты в 1С-Битрикс В 1С-Битрикс существует система внутреннего менеджера фоновых задач.
-                  <a href="https://rsimkin.github.io/post/bitrix-notes/" class="post-read-more">[Далее]</a>
-                
-              </div>
-
-              
-                <div class="blog-tags">
-                  
-                    <a href="https://rsimkin.github.io//tags/php/">php</a>&nbsp;
-                  
-                    <a href="https://rsimkin.github.io//tags/bitrix/">bitrix</a>&nbsp;
-                  
-                    <a href="https://rsimkin.github.io//tags/devops/">devops</a>&nbsp;
-                  
-                    <a href="https://rsimkin.github.io//tags/vsc/">vsc</a>&nbsp;
-                  
-                </div>
-              
-            </article>
-          
-            <article class="post-preview">
-              <a href="https://rsimkin.github.io/post/php-interview-funny-task/">
-                <h2 class="post-title">Разбор интересного задания на PHP</h2>
-                
-                
-              </a>
-
-              <span class="post-meta">
-  
-  
-  <i class="fas fa-calendar"></i>&nbsp;Опубликовано Январь 5, 2018
-  
-  
-  
-  Симкин Роман
-  
-  
-</span>
-
-
-              <div class="post-entry">
-                
-                  Введение На одном собеседовании на должность php-разработчика было предоставлено своеобразное задание. Условие было поставлено следующее.
-Дан фрагмент кода:
-&lt;?php class A { private $x = 5; } $a = new A;  Требуется предложить как можно больше способов, которыми можно получить значение $x.
-Решение Некоторые решения показались нестандартным и интересным. Предлагаю следующие варианты:
-Способ 1. Reflection API &lt;?php $reflectionClass = new ReflectionClass($a); $property = $reflectionClass-&gt;getProperty(&#39;x&#39;); $property-&gt;setAccessible(true); var_dump($property-&gt;getValue($a)); 
-Способ 2.
-                  <a href="https://rsimkin.github.io/post/php-interview-funny-task/" class="post-read-more">[Далее]</a>
-                
-              </div>
-
-              
-                <div class="blog-tags">
-                  
-                    <a href="https://rsimkin.github.io//tags/php/">php</a>&nbsp;
-                  
-                    <a href="https://rsimkin.github.io//tags/interview/">interview</a>&nbsp;
-                  
-                </div>
-              
             </article>
           
         </div>
-
         
       </div>
     </div>
